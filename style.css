@@ -168,7 +168,7 @@ body {
     color: #f9fafb;
     background:
         
-        url("../images/Screenshot\ 2025-11-25\ 155442.png") center/cover no-repeat;
+        url("Screenshot\ 2025-11-25\ 155442.png") center/cover no-repeat;
 }
 
 .hero-inner {
@@ -532,3 +532,4 @@ body {
         justify-content: space-between;
     }
 }
+
