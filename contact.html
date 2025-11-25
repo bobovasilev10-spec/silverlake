@@ -1,0 +1,149 @@
+<!doctype html>
+<html lang="bg">
+<head>
+    <meta charset="utf-8" />
+    <title>Контакти | Хотел и ресторант „Сребърно езеро“</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+    <div class="topbar">
+        <div class="topbar-inner">
+            <div class="topbar-left">
+                <span>📞 0894 343 435</span>
+                <a href="mailto:office@srebarnoezero.com">office@srebarnoezero.com</a>
+            </div>
+            <div>
+                <a href="https://www.facebook.com/srebarnoezero" target="_blank" rel="noopener">Facebook</a>
+            </div>
+        </div>
+    </div>
+
+    <header class="header">
+        <div class="header-inner">
+            <div class="logo">
+                <div class="logo-mark">SL</div>
+                <div>Сребърно <span class="highlight">езеро</span></div>
+            </div>
+            <nav class="nav">
+                <a href="index.html">Начало</a>
+                <a href="hotel.html">Хотел</a>
+                <a href="restaurant.html">Ресторант</a>
+                <a href="contact.html" class="active">Контакти</a>
+                <a href="contact.html" class="nav-cta">Резервирай</a>
+                <button class="lang-switch" type="button">EN</button>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero" style='background:
+        linear-gradient(to bottom, rgba(15,23,42,0.9), rgba(15,23,42,0.9)),
+        url("images/contact-placeholder.jpg") center/cover no-repeat;'>
+        <div class="hero-inner">
+            <div>
+                <div class="hero-eyebrow">Контакти ⋆ Локация</div>
+                <h1 class="hero-title">Свържете се с нас</h1>
+                <p class="hero-subtitle">
+                    Изпратете запитване или ни позвънете, за да обсъдим вашия престой, събитие или
+                    вечеря в ресторанта.
+                </p>
+            </div>
+            <aside class="booking-card">
+                <div class="booking-header">
+                    <h3>Основни контакти</h3>
+                    <span>хотел и ресторант</span>
+                </div>
+                <p style="margin:0; font-size:0.9rem;">
+                    <strong>Адрес:</strong><br />
+                    Hotel Silver Lake, с. Колена, Стара Загора
+                </p>
+                <p style="margin:0.6rem 0 0; font-size:0.9rem;">
+                    <strong>Телефон:</strong><br />
+                    0894 343 435<br />
+                    0899 923 232<br />
+                    0899 923 227
+                </p>
+                <p style="margin:0.6rem 0 0; font-size:0.9rem;">
+                    <strong>Имейл:</strong><br />
+                    office@srebarnoezero.com<br />
+                    hotel@srebarnoezero.com
+                </p>
+            </aside>
+        </div>
+    </section>
+
+    <section class="section alt">
+        <div class="section-inner">
+            <div class="grid">
+                <div>
+                    <div class="section-header">
+                        <h2>Форма за запитване</h2>
+                        <p>
+                            Попълнете полетата и опишете дали ви интересува хотелско настаняване,
+                            ресторант или организиране на събитие.
+                        </p>
+                    </div>
+                    <form class="form">
+                        <div class="form-row">
+                            <div>
+                                <label class="label" for="cname">Вашето име</label>
+                                <input class="input" id="cname" type="text" placeholder="Име и фамилия" />
+                            </div>
+                            <div>
+                                <label class="label" for="cemail">Имейл адрес</label>
+                                <input class="input" id="cemail" type="email" placeholder="name@example.com" />
+                            </div>
+                        </div>
+
+                        <div class="form-row">
+                            <div>
+                                <label class="label" for="cphone">Телефон</label>
+                                <input class="input" id="cphone" type="tel" placeholder="пример: 0894 000 000" />
+                            </div>
+                            <div>
+                                <label class="label" for="ctype">Тип запитване</label>
+                                <input class="input" id="ctype" type="text" placeholder="Хотел / Ресторант / Събитие" />
+                            </div>
+                        </div>
+
+                        <div>
+                            <label class="label" for="cmessage">Вашето запитване</label>
+                            <textarea class="input" id="cmessage" style="border-radius:14px; min-height:140px;" placeholder="Кратко описание на дати, брой хора и предпочитания..."></textarea>
+                        </div>
+
+                        <button class="btn btn-primary" type="submit">Изпрати</button>
+                        <!-- тук закачаш реално изпращане (PHP, WP форма и т.н.) -->
+                    </form>
+                </div>
+
+                <div>
+                    <div class="section-header">
+                        <h2>Карта и маршрут</h2>
+                        <p>
+                            Комплексът се намира до язовир до с. Колена, на кратко разстояние от
+                            Стара Загора. Замени iframe-а с реален Google Maps embed.
+                        </p>
+                    </div>
+                    <div class="map-wrapper">
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb="
+                            loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade"
+                            allowfullscreen></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="footer-inner">
+            <span>© <span id="year"></span> Хотел и ресторант „Сребърно езеро“</span>
+            <span>С. Колена, Стара Загора • Тел.: 0894 343 435</span>
+        </div>
+    </footer>
+    <script>
+        document.getElementById("year").textContent = new Date().getFullYear();
+    </script>
+</body>
+</html>
