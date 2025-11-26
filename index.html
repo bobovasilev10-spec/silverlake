@@ -132,7 +132,7 @@
                 <article class="card">
                     <div class="card-header">
                         <h3 class="card-title">Ресторант „Сребърно езеро“</h3>
-                        <span class="card-tag">Ресторант</span>
+                        
                     </div>
                     <p>
                         Салати с авторски почерк, традиционна българска кухня, риба и морски дарове,
@@ -152,7 +152,6 @@
                 <article class="card">
                     <div class="card-header">
                         <h3 class="card-title">Хотел „Сребърно езеро“</h3>
-                        <span class="card-tag">Хотел</span>
                     </div>
                     <p>
                         Уютни стаи и апартаменти с гледка към язовир Кумруджа и Сърнена Средна гора,
@@ -187,7 +186,6 @@
                 <article class="card">
                     <div class="card-header">
                         <h3 class="card-title">СПЕЦИАЛНА ПРОМОЦИЯ</h3>
-                        <span class="card-tag">Поръчки за вкъщи</span>
                     </div>
                     <p class="text-promo">
                         ➡️ <strong>10% отстъпка на всички поръчки за вкъщи до Нова година</strong>
@@ -198,7 +196,6 @@
                 <article class="card">
                     <div class="card-header">
                         <h3 class="card-title">ЗА НАШИТЕ КЛИЕНТИ</h3>
-                        <span class="card-tag">Ресторант</span>
                     </div>
                     <p>
                         За всички гости на хотела – <strong>-20% отстъпка в ресторанта</strong>.
@@ -206,7 +203,7 @@
                     <p style="font-size:0.9rem; color:white;">
                         Подробна информация и актуални оферти ще получите при контакт с нас.
                     </p>
-                    <a href="href="menu.pdf"" class="btn btn-primary">Виж менюто</a>
+                    <a href="menu.pdf" class="btn btn-primary">Виж менюто</a>
                 </article>
             </div>
         </div>
@@ -224,24 +221,37 @@
             </div>
             <div class="grid">
                 <div>
-                    <form class="form">
-                        <div class="form-row">
-                            <div>
-                                <label class="label" for="name">Вашето име</label>
-                                <input class="input" id="name" type="text" placeholder="Име и фамилия" />
-                            </div>
-                            <div>
-                                <label class="label" for="email">Имейл адрес</label>
-                                <input class="input" id="email" type="email" placeholder="name@example.com" />
-                            </div>
-                        </div>
-                        <div>
-                            <label class="label" for="message">Вашето запитване</label>
-                            <textarea class="input" id="message" style="border-radius:14px; min-height:120px;" placeholder="Опишете накратко какво ви интересува..."></textarea>
-                        </div>
-                        <button class="btn btn-primary" type="submit">Изпрати</button>
-                        <!-- вържи към backend / WP форма -->
-                    </form>
+                    <form class="form" action="send-mail.php" method="post">
+    <div class="form-row">
+        <div>
+            <label class="label" for="cname">Вашето име</label>
+            <input class="input" id="cname" name="name" type="text" placeholder="Име и фамилия" required />
+        </div>
+        <div>
+            <label class="label" for="cemail">Имейл адрес</label>
+            <input class="input" id="cemail" name="email" type="email" placeholder="name@example.com" required />
+        </div>
+    </div>
+
+    <div class="form-row">
+        <div>
+            <label class="label" for="cphone">Телефон</label>
+            <input class="input" id="cphone" name="phone" type="tel" placeholder="пример: 0894 000 000" />
+        </div>
+        <div>
+            <label class="label" for="ctype">Тип запитване</label>
+            <input class="input" id="ctype" name="type" type="text" placeholder="Хотел / Ресторант / Събитие" />
+        </div>
+    </div>
+
+    <div>
+        <label class="label" for="cmessage">Вашето запитване</label>
+        <textarea class="input" id="cmessage" name="message" style="border-radius:14px; min-height:140px;" placeholder="Кратко описание на дати, брой хора и предпочитания..." required></textarea>
+    </div>
+
+    <button class="btn btn-primary" type="submit">Изпрати</button>
+</form>
+
                 </div>
                 <div class="card">
                     <h3 style="margin-top:0; color:white;">Контакти</h3>
@@ -271,5 +281,3 @@
     </script>
 </body>
 </html>
-
-
