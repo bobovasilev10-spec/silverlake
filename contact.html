@@ -36,11 +36,15 @@
         </div>
     </header>
 
-    <section class="hero" style='background:
-        linear-gradient(to bottom, rgba(15,23,42,0.9), rgba(15,23,42,0.9)),
-        url("images/contact-placeholder.jpg") center/cover no-repeat;'>
-        <div class="hero-inner">
-            <div>
+    <section class="hero">
+    <video class="hero-video" autoplay muted loop playsinline>
+        <source src="videos/clip.mp4" type="video/mp4" />
+        Вашият браузър не поддържа HTML5 видео.
+    </video>
+
+    <div class="hero-overlay"></div>
+        <div class="hero-inner-contact">
+            <div class="hero-contacts">
                 <div class="hero-eyebrow">Контакти ⋆ Локация</div>
                 <h1 class="hero-title">Свържете се с нас</h1>
                 <p class="hero-subtitle">
@@ -48,7 +52,7 @@
                     вечеря в ресторанта.
                 </p>
             </div>
-            <aside class="booking-card">
+            <aside class="booking-card-contacts">
                 <div class="booking-header">
                     <h3>Основни контакти</h3>
                     <span>хотел и ресторант</span>
@@ -125,12 +129,10 @@
                         </p>
                     </div>
                     <div class="map-wrapper">
-                        <iframe
-                            src="https://www.google.com/maps/embed?pb="
-                            loading="lazy"
-                            referrerpolicy="no-referrer-when-downgrade"
-                            allowfullscreen></iframe>
-                    </div>
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7910.947105323341!2d25.694507215663243!3d42.48014725939604!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40a8663475afb9f5%3A0x903ae35718b15ad0!2z0KXQvtGC0LXQuyDQuCDQoNC10YHRgtC-0YDQsNC90YIg4oCc0KHRgNC10LHRitGA0L3QviDQldC30LXRgNC-4oCd!5e1!3m2!1sbg!2sbg!4v1764156127540!5m2!1sbg!2sbg" 
+                        width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+                    </iframe>
+                </div>
                 </div>
             </div>
         </div>
@@ -147,4 +149,3 @@
     </script>
 </body>
 </html>
-
