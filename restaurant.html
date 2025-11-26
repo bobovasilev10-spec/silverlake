@@ -36,10 +36,14 @@
         </div>
     </header>
 
-    <section class="hero" style='background:
-        linear-gradient(to bottom, rgba(15,23,42,0.9), rgba(15,23,42,0.9)),
-        url("images/restaurant-placeholder.jpg") center/cover no-repeat;'>
-        <div class="hero-inner">
+    <section class="hero">
+    <video class="hero-video" autoplay muted loop playsinline>
+        <source src="videos/clip.mp4" type="video/mp4" />
+        Вашият браузър не поддържа HTML5 видео.
+    </video>
+
+    <div class="hero-overlay"></div>
+        <div class="hero-inner-restaurant">
             <div>
                 <div class="hero-eyebrow">Ресторант ⋆ Храна ⋆ Събития</div>
                 <h1 class="hero-title">Ресторант „Сребърно езеро“</h1>
@@ -115,31 +119,19 @@
                 </article>
             </div>
         </div>
-    </section>
 
-    <!-- MENU – TEASER -->
-    <section class="section">
-        <div class="section-inner">
+        <div class="section-inner1">
             <div class="section-header">
                 <h2>Меню</h2>
-                <p>
-                    Тук можеш да сложиш линк към PDF меню или онлайн меню, ако го имаш. Запазваме CTA,
-                    типичен за hotel booking шаблон.
-                </p>
+                <a href="menu.pdf"
+                class="btn btn-primary"
+                target="_blank"
+                rel="noopener">
+                ВИЖ МЕНЮТО
+                </a>
+
             </div>
-            <div class="grid">
-                <article class="card">
-                    <div class="card-header">
-                        <h3 class="card-title">Основни ястия и специалитети</h3>
-                    </div>
-                    <p style="color:var(--muted);">
-                        В менюто ще откриете салати, основни ястия, риба, морски дарове, десерти и
-                        авторски предложения според сезона.
-                    </p>
-                    <a href="#" class="btn btn-primary">Свали меню (PDF)</a>
-                    <!-- смени # с реалния линк -->
-                </article>
-            </div>
+            
         </div>
     </section>
 
@@ -154,4 +146,3 @@
     </script>
 </body>
 </html>
-
