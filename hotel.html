@@ -35,11 +35,16 @@
             </nav>
         </div>
     </header>
+    
 
-    <section class="hero" style='background:
-        linear-gradient(to bottom, rgba(15,23,42,0.9), rgba(15,23,42,0.9)),
-        url("images/hotel-placeholder.jpg") center/cover no-repeat;'>
-        <div class="hero-inner">
+    <section class="hero">
+    <video class="hero-video" autoplay muted loop playsinline>
+        <source src="videos/clip.mp4" type="video/mp4" />
+        Вашият браузър не поддържа HTML5 видео.
+    </video>
+
+    <div class="hero-overlay"></div>
+        <div class="hero-inner-hotel">
             <div>
                 <div class="hero-eyebrow">Хотел ⋆ Настаняване</div>
                 <h1 class="hero-title">Хотел „Сребърно езеро“</h1>
@@ -118,15 +123,14 @@
         <div class="section-inner">
             <div class="section-header">
                 <h2>Типове помещения</h2>
-                <p>Ориентировъчна презентация в стил хотел-шаблон. Можеш да добавиш реални снимки в CSS.</p>
             </div>
             <div class="grid">
                 <article class="room-card">
-                    <div class="room-image" style="background-image:url('images/room-standard.jpg');"></div>
+                    <div class="room-image" style="background-image:url('https://srebarnoezero.com/wp-content/uploads/2023/01/IMG_20200222_140247-2-scaled.webp');"></div>
                     <div class="room-body">
                         <div class="room-meta">
                             <h3>Стандартна стая</h3>
-                            <span class="room-price">от 60 лв./нощ</span>
+                            <span class="room-price">от 60 лв./вечер</span>
                         </div>
                         <p style="margin:0 0 0.5rem; color:var(--muted);">
                             Подходяща за едно или две лица. Възможност за двойно или единично настаняване.
@@ -139,11 +143,11 @@
                 </article>
 
                 <article class="room-card">
-                    <div class="room-image" style="background-image:url('images/room-deluxe.jpg');"></div>
+                    <div class="room-image" style="background-image:url('https://srebarnoezero.com/wp-content/uploads/2025/10/IMG_4866-scaled.webp');"></div>
                     <div class="room-body">
                         <div class="room-meta">
                             <h3>Делукс стая</h3>
-                            <span class="room-price">от 70–90 лв./нощ</span>
+                            <span class="room-price">от 70–90 лв./вечер</span>
                         </div>
                         <p style="margin:0 0 0.5rem; color:var(--muted);">
                             Повече пространство и комфорт – подходяща за семейства с дете или по-дълъг престой.
@@ -156,11 +160,11 @@
                 </article>
 
                 <article class="room-card">
-                    <div class="room-image" style="background-image:url('images/room-apartment.jpg');"></div>
+                    <div class="room-image" style="background-image:url('https://srebarnoezero.com/wp-content/uploads/2023/10/Hotel-restorant-srebarno-ezero10-scaled.webp');"></div>
                     <div class="room-body">
                         <div class="room-meta">
                             <h3>Апартамент</h3>
-                            <span class="room-price">ок. 107 лв./нощ</span>
+                            <span class="room-price">от 107 лв./вечер</span>
                         </div>
                         <p style="margin:0 0 0.5rem; color:var(--muted);">
                             Апартамент за двама на последен етаж с хидромасажна вана – идеален за специални поводи.
@@ -183,4 +187,3 @@
     </script>
 </body>
 </html>
-
