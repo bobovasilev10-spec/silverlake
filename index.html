@@ -35,7 +35,7 @@
     <!-- HERO + BOOKING -->
     <section class="hero">
     <video class="hero-video" autoplay muted loop playsinline>
-        <source src="clip1.mp4" type="video/mp4" />
+        <source src="videos/clip.mp4" type="video/mp4" />
         Вашият браузър не поддържа HTML5 видео.
     </video>
 
@@ -74,15 +74,15 @@
         <div class="booking-grid">
             <div class="booking-field">
                 <label for="checkin">Настаняване</label>
-                <input class="input" type="date" id="checkin" name="checkin" required />
+                <input class="input-index" type="date" id="checkin" name="checkin" required />
             </div>
             <div class="booking-field">
                 <label for="checkout">Напускане</label>
-                <input class="input" type="date" id="checkout" name="checkout" required />
+                <input class="input-index" type="date" id="checkout" name="checkout" required />
             </div>
             <div class="booking-field">
                 <label for="adults">Възрастни</label>
-                <select class="select" id="adults" name="adults">
+                <select class="select-index" id="adults" name="adults">
                     <option>1</option>
                     <option selected>2</option>
                     <option>3</option>
@@ -91,7 +91,7 @@
             </div>
             <div class="booking-field">
                 <label for="children">Деца</label>
-                <select class="select" id="children" name="children">
+                <select class="select-index" id="children" name="children">
                     <option selected>0</option>
                     <option>1</option>
                     <option>2</option>
@@ -102,7 +102,7 @@
         <!-- НОВО: телефон над бутона -->
         <div>
             <label class="label" for="phone" style="font-size:0.8rem;">Телефон за връзка</label>
-            <input class="input" type="tel" id="phone" name="phone"
+            <input class="input-index" type="tel" id="phone" name="phone"
                    placeholder="+359*********" required />
         </div>
 
@@ -132,12 +132,12 @@
                 </p>
             </div>
             <div class="grid">
-                <article class="card">
+                <article class="card-restaurant">
                     <div class="card-header">
-                        <h3 class="card-title">Ресторант „Сребърно езеро“</h3>
+                        <h3 style="font-size: large;" class="card-title">Ресторант „Сребърно езеро“</h3>
                         
                     </div>
-                    <p>
+                    <p style="color: white;">
                         Салати с авторски почерк, традиционна българска кухня, риба и морски дарове,
                         топли предястия за вегетарианци и сезонни предложения.
                     </p>
@@ -152,11 +152,11 @@
                     </div>
                 </article>
 
-                <article class="card">
+                <article class="card-hotel">
                     <div class="card-header">
-                        <h3 class="card-title">Хотел „Сребърно езеро“</h3>
+                        <h3 style="font-size: large;" class="card-title">Хотел „Сребърно езеро“</h3>
                     </div>
-                    <p>
+                    <p style="color: white;">
                         Уютни стаи и апартаменти с гледка към язовир Кумруджа и Сърнена Средна гора,
                         модерно обзавеждане и всички удобства за вашия престой.
                     </p>
@@ -186,22 +186,22 @@
             </div>
 
             <div class="grid">
-                <article class="card">
+                <article class="card-promotion">
                     <div class="card-header">
                         <h3 class="card-title">СПЕЦИАЛНА ПРОМОЦИЯ</h3>
                     </div>
-                    <p class="text-promo">
+                    <p style="color: white;" class="text-promo">
                         ➡️ <strong>10% отстъпка на всички поръчки за вкъщи до Нова година</strong>
                         (за всички жени, които не обичат да готвят…).
                     </p>
                 </article>
 
-                <article class="card">
+                <article class="card-promotion1">
                     <div class="card-header">
                         <h3 class="card-title">ЗА НАШИТЕ КЛИЕНТИ</h3>
                     </div>
-                    <p>
-                        За всички гости на хотела – <strong>-20% отстъпка в ресторанта</strong>.
+                    <p style="color: white;">
+                        За всички гости на хотела <strong>-20% отстъпка в ресторанта</strong>.
                     </p>
                     <p style="font-size:0.9rem; color:white;">
                         Подробна информация и актуални оферти ще получите при контакт с нас.
@@ -256,7 +256,7 @@
 </form>
 
                 </div>
-                <div class="card">
+                <div class="card-contacts-index">
                     <h3 style="margin-top:0; color:white;">Контакти</h3>
                     <ul class="info-list">
                         <li><strong>Адрес:</strong> Хотел и ресторант „Сребърно езеро“, с. Колена, Стара Загора</li>
