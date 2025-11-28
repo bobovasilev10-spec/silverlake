@@ -844,15 +844,66 @@ body {
     }
 }
 
-/* SIMPLE MOBILE NAV (без JavaScript меню и бургер за краткост) */
+/* Мобилна версия – действа само до 768px ширина,
+   десктопът остава абсолютно същия */
+@media (max-width: 768px) {
 
-@media (max-width: 720px) {
-    .nav {
-        display: none;
+    /* Малко по-тесни падинги, за да се побира съдържанието */
+    .topbar-inner,
+    .header-inner,
+    .hero-inner,
+    .section {
+        padding-inline: 1rem;
     }
 
+    /* Hero: текстът и картата/формата да станат един под друг */
+    .hero-inner {
+        grid-template-columns: minmax(0, 1fr); /* вместо 2 колони */
+        gap: 1.5rem;
+        padding-top: 6rem;   /* да има място под хедъра */
+        padding-bottom: 3rem;
+    }
+
+    /* Booking картата да има малко разстояние от текста */
+    .booking-card {
+        margin-top: 0.5rem;
+        padding: 1rem 1.1rem;
+    }
+
+    /* Полетата в резервацията 1 под друго на тясно */
+    .booking-grid {
+        grid-template-columns: minmax(0, 1fr);
+        gap: 0.7rem;
+    }
+
+    /* Общи секции – по-малко вертикално място, 1 колона */
+    .section {
+        padding-block: 2.4rem;
+    }
+
+    .grid {
+        grid-template-columns: minmax(0, 1fr);
+        gap: 1.2rem;
+    }
+
+    /* Навигацията просто да се „чупи“ на два реда, без да пипаме десктопа */
     .header-inner {
-        justify-content: space-between;
+        flex-wrap: wrap;
+        row-gap: 0.5rem;
+    }
+
+    .nav {
+        flex-wrap: wrap;
+        column-gap: 0.75rem;
+        row-gap: 0.4rem;
+        font-size: 0.85rem;
+    }
+
+    .footer-inner {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0.4rem;
     }
 }
+
 
