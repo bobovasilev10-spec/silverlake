@@ -8,28 +8,34 @@
 </head>
 <body>
 
-    <header class="header">
-        <div class="header-inner">
-            <div class="logo">
-                <img src="https://srebarnoezero.com/wp-content/uploads/2023/01/se2.png" width="100px" alt="SL">
-            </div>
-            <nav class="nav">
-                <a href="index.html">Начало</a>
-                <a href="hotel.html">Хотел</a>
-                <a href="restaurant.html" class="active">Ресторант</a>
-                <a href="contact.html">Контакти</a>
-                <a href="contact.html" class="nav-cta">Резервирай</a>
-                <a href="tel:+359894343435" class="call-btn"> 📞 Обади се</a>
-                <a href="https://www.facebook.com/srebarnoezero/?locale=bg_BG"
-                class="facebook-float"
-                target="_blank"
-                rel="noopener">
-                Facebook
-                </a>
-                <button class="lang-switch" type="button">EN</button>
-            </nav>
+   <header class="header">
+    <div class="header-inner">
+        <div class="logo">
+            <img src="https://srebarnoezero.com/wp-content/uploads/2023/01/se2.png" width="100px" alt="SL">
         </div>
-    </header>
+
+        <!-- САНДВИЧ БУТОН ЗА МОБИЛНО -->
+        <button class="nav-toggle" aria-label="Отвори меню" aria-expanded="false">
+            ☰
+        </button>
+
+        <nav class="nav">
+            <a href="index.html" class="active">Начало</a>
+            <a href="hotel.html">Хотел</a>
+            <a href="restaurant.html">Ресторант</a>
+            <a href="contact.html">Контакти</a>
+            <a href="contact.html" class="nav-cta">Резервирай</a>
+            <a href="tel:+359894343435" class="call-btn"> 📞 Обади се</a>
+            <a href="https://www.facebook.com/srebarnoezero/?locale=bg_BG"
+               class="facebook-float"
+               target="_blank"
+               rel="noopener">
+               Facebook
+            </a>
+            <button class="lang-switch" type="button">EN</button>
+        </nav>
+    </div>
+</header>
 
     <section class="hero">
     <video class="hero-video" autoplay muted loop playsinline>
@@ -137,8 +143,21 @@
         </div>
     </footer>
     <script>
-        document.getElementById("year").textContent = new Date().getFullYear();
-    </script>
+    // Година във footer
+    document.getElementById("year").textContent = new Date().getFullYear();
+
+    // Сандвич меню
+    const navToggle = document.querySelector('.nav-toggle');
+    const nav = document.querySelector('.nav');
+
+    if (navToggle && nav) {
+        navToggle.addEventListener('click', () => {
+            const isOpen = nav.classList.toggle('nav-open');
+            navToggle.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
+            navToggle.textContent = isOpen ? '✕' : '☰';
+        });
+    }
+</script>
+
 </body>
 </html>
-
