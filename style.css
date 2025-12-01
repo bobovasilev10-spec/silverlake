@@ -586,7 +586,7 @@ body {
     text-align: center;
     background:
         linear-gradient(to bottom, rgba(66, 69, 75, 0.3), rgba(21, 23, 26, 0.9)),
-        url("nastanqvane.png") center/cover no-repeat;  
+        url("images/nastanqvane.png") center/cover no-repeat;  
 }
 
 .card-udobstva {
@@ -597,7 +597,7 @@ body {
     text-align: center;
     background:
         linear-gradient(to bottom, rgba(66, 69, 75, 0.1), rgba(21, 23, 26, 0.9)),
-        url("udobstva.png") center/cover no-repeat;  
+        url("images/udobstva.png") center/cover no-repeat;  
 }
 
 .card-kuhnq {
@@ -608,7 +608,7 @@ body {
     text-align: center;
     background:
         linear-gradient(to bottom, rgba(66, 69, 75, 0.5), rgba(21, 23, 26, 0.9)),
-        url("kitchen.jpg") center/cover no-repeat;  
+        url("images/kitchen.jpg") center/cover no-repeat;  
 }
 
 .card-atmosfera {
@@ -619,7 +619,7 @@ body {
     text-align: center;
     background:
         linear-gradient(to bottom, rgba(66, 69, 75, 0.3), rgba(21, 23, 26, 0.9)),
-        url("atmosfera.png") center/cover no-repeat;  
+        url("images/atmosfera.png") center/cover no-repeat;  
 }
 
 .card-ketaring {
@@ -630,7 +630,7 @@ body {
     text-align: center;
     background:
         linear-gradient(to bottom, rgba(66, 69, 75, 0.6), rgba(21, 23, 26, 0.9)),
-        url("ketaring.jpg") center/cover no-repeat;  
+        url("images/ketaring.jpg") center/cover no-repeat;  
 }
 
 .card-contacts-index {
@@ -641,7 +641,7 @@ body {
     text-align: center;
     background:
         linear-gradient(to bottom, rgba(66, 69, 75, 0.6), rgba(24, 29, 41, 0.9)),
-        url("contacts.jpg") center/cover no-repeat;  
+        url("images/contacts.jpg") center/cover no-repeat;  
 }
 
 .card-promotion {
@@ -663,7 +663,7 @@ body {
     text-align: center;
     background:
         linear-gradient(to bottom, rgba(81, 85, 94, 0.1), rgba(24, 29, 41, 0.1)),
-        url("promo.jpg") center/cover no-repeat;   
+        url("images/promo.jpg") center/cover no-repeat;   
 }
 
 .card-restaurant {
@@ -674,7 +674,7 @@ body {
     text-align: center;
      background:
         linear-gradient(to bottom, rgba(81, 85, 94, 0.4), rgba(24, 29, 41, 0.8)),
-        url("restaurant.png") center/cover no-repeat;   
+        url("images/restaurant.png") center/cover no-repeat;   
 }
 
 .card-hotel {
@@ -685,7 +685,7 @@ body {
     text-align: center;
      background:
         linear-gradient(to bottom, rgba(117, 124, 143, 0.4), rgba(24, 29, 41, 0.8)),
-        url("Screenshot\ 2025-11-25\ 155442.png") center/cover no-repeat;   
+        url("images/Screenshot\ 2025-11-25\ 155442.png") center/cover no-repeat;   
 }
 .card-header {
     display: flex;
