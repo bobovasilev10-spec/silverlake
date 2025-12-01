@@ -10,32 +10,39 @@
 
     <!-- HEADER -->
     <header class="header">
-        <div class="header-inner">
-            <div class="logo">
-                <img src="https://srebarnoezero.com/wp-content/uploads/2023/01/se2.png" width="100px" alt="SL">
-            </div>
-            <nav class="nav">
-                <a href="index.html" class="active">Начало</a>
-                <a href="hotel.html">Хотел</a>
-                <a href="restaurant.html">Ресторант</a>
-                <a href="contact.html">Контакти</a>
-                <a href="contact.html" class="nav-cta">Резервирай</a>
-                <a href="tel:+359894343435" class="call-btn"> 📞 Обади се</a>
-                <a href="https://www.facebook.com/srebarnoezero/?locale=bg_BG"
-                class="facebook-float"
-                target="_blank"
-                rel="noopener">
-                Facebook
-                </a>
-                <button class="lang-switch" type="button">EN</button>
-            </nav>
+    <div class="header-inner">
+        <div class="logo">
+            <img src="https://srebarnoezero.com/wp-content/uploads/2023/01/se2.png" width="100px" alt="SL">
         </div>
-    </header>
+
+        <!-- САНДВИЧ БУТОН ЗА МОБИЛНО -->
+        <button class="nav-toggle" aria-label="Отвори меню" aria-expanded="false">
+            ☰
+        </button>
+
+        <nav class="nav">
+            <a href="index.html" class="active">Начало</a>
+            <a href="hotel.html">Хотел</a>
+            <a href="restaurant.html">Ресторант</a>
+            <a href="contact.html">Контакти</a>
+            <a href="contact.html" class="nav-cta">Резервирай</a>
+            <a href="tel:+359894343435" class="call-btn"> 📞 Обади се</a>
+            <a href="https://www.facebook.com/srebarnoezero/?locale=bg_BG"
+               class="facebook-float"
+               target="_blank"
+               rel="noopener">
+               Facebook
+            </a>
+            <button class="lang-switch" type="button">EN</button>
+        </nav>
+    </div>
+</header>
+
 
     <!-- HERO + BOOKING -->
     <section class="hero">
     <video class="hero-video" autoplay muted loop playsinline>
-        <source src="clip1.mp4" type="video/mp4" />
+        <source src=clip1.mp4" type="video/mp4" />
         Вашият браузър не поддържа HTML5 видео.
     </video>
 
@@ -67,22 +74,22 @@
             <aside class="booking-card">
     <div class="booking-header">
         <h3>Намерете подходящите дати</h3>
+        <span>Реални резервации – по телефона или имейл</span>
     </div>
 
-    <!-- ВАЖНО: action + method -->
     <form action="booking-request.php" method="post">
         <div class="booking-grid">
             <div class="booking-field">
                 <label for="checkin">Настаняване</label>
-                <input class="input-index" type="date" id="checkin" name="checkin" required />
+                <input class="input" type="date" id="checkin" name="checkin" required />
             </div>
             <div class="booking-field">
                 <label for="checkout">Напускане</label>
-                <input class="input-index" type="date" id="checkout" name="checkout" required />
+                <input class="input" type="date" id="checkout" name="checkout" required />
             </div>
             <div class="booking-field">
                 <label for="adults">Възрастни</label>
-                <select class="select-index" id="adults" name="adults">
+                <select class="select" id="adults" name="adults">
                     <option>1</option>
                     <option selected>2</option>
                     <option>3</option>
@@ -91,7 +98,7 @@
             </div>
             <div class="booking-field">
                 <label for="children">Деца</label>
-                <select class="select-index" id="children" name="children">
+                <select class="select" id="children" name="children">
                     <option selected>0</option>
                     <option>1</option>
                     <option>2</option>
@@ -99,24 +106,26 @@
                 </select>
             </div>
         </div>
-        <!-- НОВО: телефон над бутона -->
-        <div>
+
+        <div style="margin-top:0.8rem;">
             <label class="label" for="phone" style="font-size:0.8rem;">Телефон за връзка</label>
-            <input class="input-index" type="tel" id="phone" name="phone"
-                   placeholder="+359*********" required />
+            <input class="input" type="tel" id="phone" name="phone"
+                   placeholder="пример: 0894 000 000" required />
         </div>
 
-        <div style="margin-top:1rem; display:flex; justify-content:space-between; gap:0.8rem; flex-wrap:wrap;">
+        <!-- ТУК: слагаме клас вместо inline стил -->
+        <div class="booking-footer">
             <button class="btn btn-primary" type="submit">
                 Изпрати запитване
             </button>
-            <div style="font-size:0.8rem; color:var(--muted); text-align:right;">
+            <div class="booking-footer-text">
                 Или резервирайте директно на<br />
                 <strong>0894 343 435</strong>
             </div>
         </div>
     </form>
 </aside>
+
 
         </div>
     </section>
@@ -283,8 +292,21 @@
         </div>
     </footer>
     <script>
-        document.getElementById("year").textContent = new Date().getFullYear();
-    </script>
+    // Година във footer
+    document.getElementById("year").textContent = new Date().getFullYear();
+
+    // Сандвич меню
+    const navToggle = document.querySelector('.nav-toggle');
+    const nav = document.querySelector('.nav');
+
+    if (navToggle && nav) {
+        navToggle.addEventListener('click', () => {
+            const isOpen = nav.classList.toggle('nav-open');
+            navToggle.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
+            navToggle.textContent = isOpen ? '✕' : '☰';
+        });
+    }
+</script>
+
 </body>
 </html>
-
