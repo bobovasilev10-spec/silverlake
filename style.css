@@ -862,6 +862,17 @@ body {
     text-align: right;
 }
 
+a[href^="tel"] {
+    color: #f9fafb !important;     /* или #ffffff, или който цвят искаш */
+    text-decoration: none !important;
+    font-weight: inherit;
+}
+
+a[href^="tel"]:hover {
+    color: var(--primary) !important;
+}
+
+
 
 
 
@@ -1077,3 +1088,4 @@ body {
         gap: 0.4rem;
     }
 }
+
