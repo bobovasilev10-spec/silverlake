@@ -260,6 +260,7 @@ body {
     gap: 2.5rem;
     align-items: flex-end;
     padding-top: 200px;
+    
 }
 
 .hero-inner-restaurant {
@@ -322,7 +323,7 @@ body {
 
 .hero-subtitle {
     margin: 0;
-    max-width: 520px;
+    max-width: 440px;
     color: rgba(255, 255, 255, 0.95);
 }
 
@@ -1088,4 +1089,3 @@ a[href^="tel"]:hover {
         gap: 0.4rem;
     }
 }
-
