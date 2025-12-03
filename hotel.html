@@ -55,7 +55,7 @@
                 <h1 class="hero-title-hotel">Хотел</h1>
                 <h1 class="hero-title-hotel">„Сребърно езеро“</h1>
                 <p class="hero-subtitle">
-                    Уют и комфорт сред природата на Сърнена Средна гора – само на 13 км от Стара Загора,
+                    Уют и комфорт сред природата на Сърнена Средна гора – само на 16 км от Стара Загора,
                     с чудесен изглед към язовир Кумруджа.
                 </p>
                 <div class="hero-badges">
@@ -148,7 +148,11 @@
                 </article>
 
                 <article class="room-card">
-                    <div class="room-image" style="background-image:url('https://srebarnoezero.com/wp-content/uploads/2025/10/IMG_4866-scaled.webp');"></div>
+                    <div
+                        class="room-image room-image-clickable"
+                        data-images="images/deluxe1.webp|images/deluxe2.webp|images/deluxe3.webp|images/deluxe4.webp"
+                        style="background-image:url(images/deluxe1.webp);">
+                    </div>
                     <div class="room-body">
                         <div class="room-meta">
                             <h3>Делукс стая</h3>
@@ -165,11 +169,15 @@
                 </article>
 
                 <article class="room-card">
-                    <div class="room-image" style="background-image:url('https://srebarnoezero.com/wp-content/uploads/2023/10/Hotel-restorant-srebarno-ezero10-scaled.webp');"></div>
+                    <div
+                        class="room-image room-image-clickable"
+                        data-images="images/apart1.webp|images/apart2.webp"
+                        style="background-image:url(images/apart1.webp);">
+                    </div>
                     <div class="room-body">
                         <div class="room-meta">
                             <h3>Апартамент</h3>
-                            <span class="room-price">от 107 лв./вечер</span>
+                            <span class="room-price">107 лв./вечер</span>
                         </div>
                         <p style="margin:0 0 0.5rem; color:var(--muted);">
                             Апартамент за двама на последен етаж с хидромасажна вана – идеален за специални поводи.
@@ -180,6 +188,72 @@
         </div>
     </section>
 
+    <!-- PRICES SECTION -->
+<section class="section alt">
+    <div class="section-inner">
+        <div class="section-header">
+            <h2>Цени</h2>
+        </div>
+
+        <div style="overflow-x:auto; box-shadow: 0 8px 20px rgba(0,0,0,0.6);">
+            <table style="
+                width:100%;
+                border-collapse:collapse;
+                background:white;
+                border-radius:18px;
+                overflow:hidden;
+                font-size:1rem;
+            ">
+                <tr style="background:#f3f5f9;">
+                    <th style="padding:14px; text-align:left;">Тип помещение</th>
+                    <th style="padding:14px; text-align:center;">Стандартна стая</th>
+                    <th style="padding:14px; text-align:center;">Стая Делукс</th>
+                </tr>
+
+                <tr>
+                    <td style="padding:14px;">Единична</td>
+                    <td style="padding:14px; text-align:center;">60 лв. / 30.68€</td>
+                    <td style="padding:14px; text-align:center;">70 лв. / 35.79€</td>
+                </tr>
+
+                <tr style="background:#f9fafb;">
+                    <td style="padding:14px;">Двойна /с 2 легла или общо двойно легло – спалня/</td>
+                    <td style="padding:14px; text-align:center;">70 лв. / 35.79€</td>
+                    <td style="padding:14px; text-align:center;">90 лв. / 46.02€</td>
+                </tr>
+
+                <tr>
+                    <td style="padding:14px;">Студио/апартамент за двама с общо двойно легло – спалня</td>
+                    <td style="padding:14px; text-align:center;">–</td>
+                    <td style="padding:14px; text-align:center;">107 лв. / 54.71€</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+</section>
+
+<!-- LOBBY BAR SECTION -->
+<section class="section">
+    <div class="section-inner">
+        <div class="section-header">
+            <h2>Лоби бар</h2>
+        </div>
+
+        <div class="grid">
+            <img src="images/lobby1.webp" style="width:100%; border-radius:18px; box-shadow:0 8px 20px rgba(0,0,0,0.4);" />
+            <img src="images/lobby2.webp" style="width:100%; border-radius:18px; box-shadow:0 8px 20px rgba(0,0,0,0.4);" />
+            <img src="images/lobby3.webp" style="width:100%; border-radius:18px; box-shadow:0 8px 20px rgba(0,0,0,0.4);" />
+            <img src="images/lobby4.webp" style="width:100%; border-radius:18px; box-shadow:0 8px 20px rgba(0,0,0,0.4);" />
+        </div>
+
+        <p style="margin-top:1.5rem; color:white; text-align:center; font-size:1rem;">
+            Хотелът разполага и с лоби бар, където гостите могат да се насладят на закуска и да се отдадат на вкусни предложения, придружени
+            от чаша свежо сутрешно кафе или чай. В слънчевите сутрини гостите могат да се възползват от маси на открито за още по-приятно изживяване.
+        </p>
+    </div>
+</section>
+
+
     <!-- FOOTER -->
     <footer class="footer">
         <div class="footer-inner">
@@ -188,10 +262,14 @@
         </div>
     </footer>
     <script>
-    // Година във footer
-    document.getElementById("year").textContent = new Date().getFullYear();
+document.addEventListener('DOMContentLoaded', function () {
+    // Year in footer
+    const yearEl = document.getElementById("year");
+    if (yearEl) {
+        yearEl.textContent = new Date().getFullYear();
+    }
 
-    // Сандвич меню
+    // Burger menu
     const navToggle = document.querySelector('.nav-toggle');
     const nav = document.querySelector('.nav');
 
@@ -202,7 +280,79 @@
             navToggle.textContent = isOpen ? '✕' : '☰';
         });
     }
+
+    // GALLERY / LIGHTBOX for rooms
+    const lightbox = document.getElementById('room-lightbox');
+    if (!lightbox) return;
+
+    const imgEl   = lightbox.querySelector('.lightbox-image');
+    const prevBtn = lightbox.querySelector('.lightbox-prev');
+    const nextBtn = lightbox.querySelector('.lightbox-next');
+    const closeBtn = lightbox.querySelector('.lightbox-close');
+    const backdrop = lightbox.querySelector('.lightbox-backdrop');
+
+    let currentImages = [];
+    let currentIndex = 0;
+
+    function showImage(index) {
+        if (!currentImages.length) return;
+        if (index < 0) index = currentImages.length - 1;
+        if (index >= currentImages.length) index = 0;
+        currentIndex = index;
+        imgEl.src = currentImages[currentIndex];
+    }
+
+    function openLightbox(images, startIndex) {
+        currentImages = images;
+        showImage(startIndex || 0);
+        lightbox.classList.add('open');
+        document.body.style.overflow = 'hidden';
+    }
+
+    function closeLightbox() {
+        lightbox.classList.remove('open');
+        document.body.style.overflow = '';
+    }
+
+    // Клик по снимка на стая
+    document.querySelectorAll('.room-image-clickable').forEach(el => {
+        el.addEventListener('click', () => {
+            const data = el.dataset.images || '';
+            const imgs = data.split('|').map(s => s.trim()).filter(Boolean);
+            if (!imgs.length) return;
+            openLightbox(imgs, 0);
+        });
+    });
+
+    prevBtn.addEventListener('click', () => showImage(currentIndex - 1));
+    nextBtn.addEventListener('click', () => showImage(currentIndex + 1));
+    closeBtn.addEventListener('click', closeLightbox);
+    backdrop.addEventListener('click', closeLightbox);
+
+    document.addEventListener('keydown', e => {
+        if (!lightbox.classList.contains('open')) return;
+        if (e.key === 'Escape') closeLightbox();
+        if (e.key === 'ArrowLeft') showImage(currentIndex - 1);
+        if (e.key === 'ArrowRight') showImage(currentIndex + 1);
+    });
+});
 </script>
+
+
+<!-- Lightbox за снимките на стаите -->
+<div class="room-lightbox" id="room-lightbox">
+    <div class="lightbox-backdrop"></div>
+
+    <div class="lightbox-inner">
+        <button class="lightbox-close" type="button">×</button>
+        <button class="lightbox-prev" type="button">‹</button>
+
+        <img class="lightbox-image" src="" alt="Room photo" />
+
+        <button class="lightbox-next" type="button">›</button>
+    </div>
+</div>
+
 
 </body>
 </html>
