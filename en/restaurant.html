@@ -1,0 +1,185 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <title>“Srebarno Ezero” Restaurant | Menu & Terrace</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="../style.css" />
+</head>
+<body>
+
+<header class="header">
+    <div class="header-inner">
+        <div class="logo">
+            <img src="https://srebarnoezero.com/wp-content/uploads/2023/01/se2.png"
+                 width="100px"
+                 alt="SL">
+        </div>
+
+        <!-- Mobile burger button -->
+        <button class="nav-toggle" aria-label="Open menu" aria-expanded="false">
+            ☰
+        </button>
+
+        <nav class="nav">
+            <a href="index.html">Home</a>
+            <a href="hotel.html">Hotel</a>
+            <a href="restaurant.html" class="active">Restaurant</a>
+            <a href="contact.html">Contacts</a>
+            <a href="contact.html" class="nav-cta">Book now</a>
+            <a href="tel:+359894343435" class="call-btn"> 📞 Call us</a>
+            <a href="https://www.facebook.com/srebarnoezero/?locale=bg_BG"
+               class="facebook-float"
+               target="_blank"
+               rel="noopener">
+               Facebook
+            </a>
+            <button class="lang-switch" type="button" onclick="window.location.href='../restaurant.html'">
+                BG
+            </button>
+        </nav>
+    </div>
+</header>
+
+<section class="hero">
+    <video class="hero-video" autoplay muted loop playsinline>
+        <source src="../videos/clip.mp4" type="video/mp4" />
+        Your browser does not support HTML5 video.
+    </video>
+
+    <div class="hero-overlay"></div>
+
+    <div class="hero-inner-restaurant">
+        <div>
+            <div class="hero-eyebrow">Restaurant ⋆ Food ⋆ Events</div>
+            <h1 class="hero-title">Restaurant “Srebarno Ezero”</h1>
+            <p class="hero-subtitle">
+                One of the few restaurants in Stara Zagora with an exceptional view toward
+                Sarnena Sredna Gora and the Kumrudzha dam – with a rich menu and quality service.
+            </p>
+
+            <div class="hero-badges">
+                <span class="badge">Indoor hall ~100 seats</span>
+                <span class="badge">Terrace and garden ~180 seats</span>
+                <span class="badge">Charcoal barbecue</span>
+            </div>
+        </div>
+
+        <aside class="booking-card-restaurant">
+            <div class="booking-header">
+                <h3>Table reservation</h3>
+            </div>
+
+            <p style="margin:0; font-size:0.9rem;">
+                For reservations and takeaway orders, contact us at:<br/>
+                <strong>0894 343 435</strong>
+            </p>
+
+            <p style="margin:0.75rem 0 0; font-size:0.85rem; color:white;">
+                We recommend booking in advance for weekends and holidays.
+            </p>
+        </aside>
+    </div>
+</section>
+
+
+<section class="section alt">
+    <div class="section-inner">
+        <div class="section-header">
+            <h2>What the restaurant offers</h2>
+            <p>
+                The menu of Restaurant “Srebarno Ezero” includes signature salads, traditional dishes,
+                fish, seafood and seasonal offers.
+            </p>
+        </div>
+
+        <div class="grid">
+
+            <article class="card-kuhnq">
+                <div class="card-header">
+                    <h3 class="card-title">Cuisine</h3>
+                </div>
+                <ul class="info-list">
+                    <li>• A rich menu of traditional Bulgarian dishes</li>
+                    <li>• Various seasonal offers</li>
+                    <li>• Charcoal barbecue during the warm months</li>
+                    <li>• Hot vegetarian starters</li>
+                </ul>
+            </article>
+
+            <article class="card-atmosfera">
+                <div class="card-header">
+                    <h3 class="card-title">Atmosphere</h3>
+                </div>
+                <ul class="info-list">
+                    <li>• Fast and quality service</li>
+                    <li>• Indoor hall with glass facade and a view</li>
+                    <li>• Outdoor terrace and garden</li>
+                    <li>• Suitable for family and company events</li>
+                </ul>
+            </article>
+
+            <article class="card-ketaring">
+                <div class="card-header">
+                    <h3 class="card-title">Events & catering</h3>
+                </div>
+                <ul class="info-list">
+                    <li>• Organisation of personal and family celebrations</li>
+                    <li>• Christenings, birthdays, teambuilding events</li>
+                    <li>• Professional catering for events</li>
+                    <li>• Delivery options</li>
+                </ul>
+            </article>
+
+        </div>
+    </div>
+
+    <div class="section-inner1">
+        <div class="section-header">
+            <h2>Menu</h2>
+
+            <a href="../menu.pdf"
+               class="btn btn-primary"
+               target="_blank"
+               rel="noopener">
+               VIEW MENU
+            </a>
+        </div>
+    </div>
+
+    <!-- VIDEO UNDER MENU BUTTON -->
+        <div class="menu-video-wrapper">
+            <video class="menu-video" autoplay muted loop playsinline>
+                <source src="../videos/clip2.mp4" type="video/mp4" />
+                Вашият браузър не поддържа HTML5 видео.
+            </video>
+        </div>
+</section>
+
+
+<footer class="footer">
+    <div class="footer-inner">
+        <span>© <span id="year"></span> Restaurant “Srebarno Ezero”</span>
+        <span>Phone: 0894 343 435</span>
+    </div>
+</footer>
+
+<script>
+    // Year
+    document.getElementById("year").textContent = new Date().getFullYear();
+
+    // Burger
+    const navToggle = document.querySelector('.nav-toggle');
+    const nav = document.querySelector('.nav');
+
+    if (navToggle && nav) {
+        navToggle.addEventListener('click', () => {
+            const open = nav.classList.toggle('nav-open');
+            navToggle.setAttribute('aria-expanded', open ? 'true' : 'false');
+            navToggle.textContent = open ? '✕' : '☰';
+        });
+    }
+</script>
+
+</body>
+</html>

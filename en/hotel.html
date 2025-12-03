@@ -1,0 +1,364 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <title>Hotel “Srebarno Ezero” | Accommodation and rooms</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- важен относителен път -->
+    <link rel="stylesheet" href="../style.css" />
+</head>
+<body>
+
+<header class="header">
+    <div class="header-inner">
+        <div class="logo">
+            <img src="https://srebarnoezero.com/wp-content/uploads/2023/01/se2.png"
+                 width="100px"
+                 alt="Srebarno Ezero logo">
+        </div>
+
+        <!-- Burger button for mobile -->
+        <button class="nav-toggle" aria-label="Open menu" aria-expanded="false">
+            ☰
+        </button>
+
+        <nav class="nav">
+            <a href="index.html">Home</a>
+            <a href="hotel.html" class="active">Hotel</a>
+            <a href="restaurant.html">Restaurant</a>
+            <a href="contact.html">Contacts</a>
+            <a href="contact.html" class="nav-cta">Book now</a>
+            <a href="tel:+359894343435" class="call-btn"> 📞 Call us</a>
+            <a href="https://www.facebook.com/srebarnoezero/?locale=bg_BG"
+               class="facebook-float"
+               target="_blank"
+               rel="noopener">
+               Facebook
+            </a>
+            <!-- връщане към българската хотел страница -->
+            <button class="lang-switch" type="button" onclick="window.location.href='../hotel.html'">
+                BG
+            </button>
+        </nav>
+    </div>
+</header>
+
+<section class="hero">
+    <video class="hero-video" autoplay muted loop playsinline>
+        <source src="../videos/clip.mp4" type="video/mp4" />
+        Your browser does not support HTML5 video.
+    </video>
+
+    <div class="hero-overlay"></div>
+
+    <div class="hero-inner-hotel">
+        <div>
+            <div class="hero-eyebrow">Hotel ⋆ Accommodation</div>
+            <h1 class="hero-title-hotel">Hotel</h1>
+            <h1 class="hero-title-hotel">“Srebarno Ezero”</h1>
+            <p class="hero-subtitle">
+                Comfort and coziness in the nature of Sarnena Sredna Gora – only 16 km from Stara Zagora,
+                with a wonderful view of the Kumrudzha dam.
+            </p>
+            <div class="hero-badges">
+                <span class="badge">Rooms and an apartment</span>
+                <span class="badge">Free parking and Wi-Fi</span>
+                <span class="badge">Terrace with a view</span>
+            </div>
+        </div>
+
+        <aside class="booking-card-hotel">
+            <div class="booking-header">
+                <h3>Reservations</h3>
+            </div>
+            <div>
+                <p style="margin:0; font-size:0.9rem;">
+                    <strong>Phone:</strong> 0894 343 435<br />
+                    <strong>Email:</strong> hotel@srebarnoezero.com
+                </p>
+                <p style="margin:0.75rem 0 0; font-size:0.85rem; color: white; width: 380px;">
+                    When sending an inquiry, please specify preferred dates, number of guests
+                    and room type.
+                </p>
+            </div>
+        </aside>
+    </div>
+</section>
+
+<section class="section alt">
+    <div class="section-inner">
+        <div class="section-header">
+            <h2>Hotel amenities</h2>
+            <p>
+                “Srebarno Ezero” is a hotel near Stara Zagora, offering coziness, good location and
+                practical amenities for both short and longer stays.
+            </p>
+        </div>
+        <div class="grid">
+            <article class="card-nastanqvane">
+                <div class="card-header">
+                    <h3 class="card-title">Accommodation</h3>
+                </div>
+                <p style="color: white;">
+                    The hotel offers hotel rooms and an apartment with a wonderful view of the dam.
+                    Suitable for business guests, families and couples.
+                </p>
+                <ul class="info-list">
+                    <li>• Modern furnishing</li>
+                    <li>• Private bathroom</li>
+                    <li>• TV and Wi-Fi</li>
+                    <li>• Central heating</li>
+                </ul>
+            </article>
+
+            <article class="card-udobstva">
+                <div class="card-header">
+                    <h3 class="card-title">General amenities</h3>
+                </div>
+                <ul class="info-list">
+                    <li>• Comfort and coziness in nature</li>
+                    <li>• Terrace with a view of the Kumrudzha dam</li>
+                    <li>• Free parking</li>
+                    <li>• Free Wi-Fi in the hotel and restaurant</li>
+                    <li>• Quality and correct service</li>
+                </ul>
+            </article>
+        </div>
+    </div>
+</section>
+
+<section class="section">
+    <div class="section-inner">
+        <div class="section-header">
+            <h2>Room types</h2>
+        </div>
+        <div class="grid">
+            <article class="room-card">
+                <div class="room-image"
+                     style="background-image:url('https://srebarnoezero.com/wp-content/uploads/2023/01/IMG_20200222_140247-2-scaled.webp');">
+                </div>
+                <div class="room-body">
+                    <div class="room-meta">
+                        <h3>Standard room</h3>
+                        <span class="room-price">from 60 BGN/night</span>
+                    </div>
+                    <p style="margin:0 0 0.5rem; color:var(--muted);">
+                        Suitable for one or two people. Option for double or single occupancy.
+                    </p>
+                    <ul class="info-list">
+                        <li>• Double bed or two single beds</li>
+                        <li>• TV, Wi-Fi, air conditioner</li>
+                    </ul>
+                </div>
+            </article>
+
+            <article class="room-card">
+                    <div
+                        class="room-image room-image-clickable"
+                        data-images="../images/deluxe1.webp|../images/deluxe2.webp|../images/deluxe3.webp|../images/deluxe4.webp"
+                        style="background-image:url(../images/deluxe1.webp);">
+                    </div>
+                <div class="room-body">
+                    <div class="room-meta">
+                        <h3>Deluxe room</h3>
+                        <span class="room-price">from 70–90 BGN/night</span>
+                    </div>
+                    <p style="margin:0 0 0.5rem; color:var(--muted);">
+                        More space and comfort – suitable for families with a child or a longer stay.
+                    </p>
+                    <ul class="info-list">
+                        <li>• Spacious room</li>
+                        <li>• Some rooms with larger terraces</li>
+                    </ul>
+                </div>
+            </article>
+
+            <article class="room-card">
+                    <div
+                        class="room-image room-image-clickable"
+                        data-images="../images/apart1.webp|../images/apart2.webp"
+                        style="background-image:url(../images/apart1.webp);">
+                    </div>
+                <div class="room-body">
+                    <div class="room-meta">
+                        <h3>Apartment</h3>
+                        <span class="room-price">from 107 BGN/night</span>
+                    </div>
+                    <p style="margin:0 0 0.5rem; color:var(--muted);">
+                        Apartment for two on the top floor with a hydromassage bathtub – ideal for special occasions.
+                    </p>
+                </div>
+            </article>
+        </div>
+    </div>
+</section>
+
+    <!-- PRICES SECTION -->
+<section class="section alt">
+    <div class="section-inner">
+        <div class="section-header">
+            <h2>Prices</h2>
+        </div>
+
+        <div style="overflow-x:auto; box-shadow: 0 8px 20px rgba(0,0,0,0.6);">
+            <table style="
+                width:100%;
+                border-collapse:collapse;
+                background:white;
+                border-radius:18px;
+                overflow:hidden;
+                font-size:1rem;
+            ">
+                <tr style="background:#f3f5f9;">
+                <th style="padding:14px; text-align:left;">Room type</th>
+                <th style="padding:14px; text-align:center;">Standard room</th>
+                <th style="padding:14px; text-align:center;">Deluxe room</th>
+                </tr>
+
+                <tr>
+                    <td style="padding:14px;">Single use</td>
+                    <td style="padding:14px; text-align:center;">60 BGN / 30.68€</td>
+                    <td style="padding:14px; text-align:center;">70 BGN / 35.79€</td>
+                </tr>
+
+                <tr style="background:#f9fafb;">
+                    <td style="padding:14px;">Double / 2 separate beds or one double bed</td>
+                    <td style="padding:14px; text-align:center;">70 BGN / 35.79€</td>
+                    <td style="padding:14px; text-align:center;">90 BGN / 46.02€</td>
+                </tr>
+
+                <tr>
+                    <td style="padding:14px;">Studio / apartment for two with a double bed</td>
+                    <td style="padding:14px; text-align:center;">–</td>
+                    <td style="padding:14px; text-align:center;">107 BGN / 54.71€</td>
+                </tr>
+
+            </table>
+        </div>
+    </div>
+</section>
+
+<!-- LOBBY BAR SECTION -->
+<section class="section">
+    <div class="section-inner">
+        <div class="section-header">
+            <h2>Lobby bar</h2>
+        </div>
+
+        <div class="grid">
+            <img src="../images/lobby1.webp" style="width:100%; border-radius:18px; box-shadow:0 8px 20px rgba(0,0,0,0.4);" />
+            <img src="../images/lobby2.webp" style="width:100%; border-radius:18px; box-shadow:0 8px 20px rgba(0,0,0,0.4);" />
+            <img src="../images/lobby3.webp" style="width:100%; border-radius:18px; box-shadow:0 8px 20px rgba(0,0,0,0.4);" />
+            <img src="../images/lobby4.webp" style="width:100%; border-radius:18px; box-shadow:0 8px 20px rgba(0,0,0,0.4);" />
+        </div>
+
+        <p style="margin-top:1.5rem; color:white; text-align:center; font-size:1rem;">
+            The hotel also features a lobby bar where guests can enjoy breakfast and indulge in delicious options,
+            accompanied by a cup of fresh morning coffee or tea. On sunny mornings, guests can make use of the outdoor tables
+            for an even more pleasant experience.
+        </p>
+
+</section>
+
+<footer class="footer">
+    <div class="footer-inner">
+        <span>© <span id="year"></span> Hotel “Srebarno Ezero”</span>
+        <span>Reservations: 0894 343 435</span>
+    </div>
+</footer>
+
+<script>
+document.addEventListener('DOMContentLoaded', function () {
+    // Year in footer
+    const yearEl = document.getElementById("year");
+    if (yearEl) {
+        yearEl.textContent = new Date().getFullYear();
+    }
+
+    // Burger menu
+    const navToggle = document.querySelector('.nav-toggle');
+    const nav = document.querySelector('.nav');
+
+    if (navToggle && nav) {
+        navToggle.addEventListener('click', () => {
+            const isOpen = nav.classList.toggle('nav-open');
+            navToggle.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
+            navToggle.textContent = isOpen ? '✕' : '☰';
+        });
+    }
+
+    // GALLERY / LIGHTBOX for rooms
+    const lightbox = document.getElementById('room-lightbox');
+    if (!lightbox) return;
+
+    const imgEl   = lightbox.querySelector('.lightbox-image');
+    const prevBtn = lightbox.querySelector('.lightbox-prev');
+    const nextBtn = lightbox.querySelector('.lightbox-next');
+    const closeBtn = lightbox.querySelector('.lightbox-close');
+    const backdrop = lightbox.querySelector('.lightbox-backdrop');
+
+    let currentImages = [];
+    let currentIndex = 0;
+
+    function showImage(index) {
+        if (!currentImages.length) return;
+        if (index < 0) index = currentImages.length - 1;
+        if (index >= currentImages.length) index = 0;
+        currentIndex = index;
+        imgEl.src = currentImages[currentIndex];
+    }
+
+    function openLightbox(images, startIndex) {
+        currentImages = images;
+        showImage(startIndex || 0);
+        lightbox.classList.add('open');
+        document.body.style.overflow = 'hidden';
+    }
+
+    function closeLightbox() {
+        lightbox.classList.remove('open');
+        document.body.style.overflow = '';
+    }
+
+    // Клик по снимка на стая
+    document.querySelectorAll('.room-image-clickable').forEach(el => {
+        el.addEventListener('click', () => {
+            const data = el.dataset.images || '';
+            const imgs = data.split('|').map(s => s.trim()).filter(Boolean);
+            if (!imgs.length) return;
+            openLightbox(imgs, 0);
+        });
+    });
+
+    prevBtn.addEventListener('click', () => showImage(currentIndex - 1));
+    nextBtn.addEventListener('click', () => showImage(currentIndex + 1));
+    closeBtn.addEventListener('click', closeLightbox);
+    backdrop.addEventListener('click', closeLightbox);
+
+    document.addEventListener('keydown', e => {
+        if (!lightbox.classList.contains('open')) return;
+        if (e.key === 'Escape') closeLightbox();
+        if (e.key === 'ArrowLeft') showImage(currentIndex - 1);
+        if (e.key === 'ArrowRight') showImage(currentIndex + 1);
+    });
+});
+</script>
+
+
+<!-- Lightbox за снимките на стаите -->
+<div class="room-lightbox" id="room-lightbox">
+    <div class="lightbox-backdrop"></div>
+
+    <div class="lightbox-inner">
+        <button class="lightbox-close" type="button">×</button>
+        <button class="lightbox-prev" type="button">‹</button>
+
+        <img class="lightbox-image" src="" alt="Room photo" />
+
+        <button class="lightbox-next" type="button">›</button>
+    </div>
+</div>
+
+
+</body>
+</html>
