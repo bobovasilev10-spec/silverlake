@@ -1,395 +1,621 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="bg">
-<head>
+  <head>
     <meta charset="utf-8" />
-    <title>Хотел „Сребърно езеро“ | Настаняване и стаи</title>
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="stylesheet" href="style.css" />
-</head>
-<body>
 
+    <title>Хотел „Сребърно езеро“ | Стаи и апартаменти край Стара Загора</title>
+    <meta
+      name="description"
+      content="Хотел „Сребърно езеро“ край Стара Загора – стаи и апартаменти, удобства и резервации. Тел: 0894 343 435."
+    />
+    <meta
+      name="robots"
+      content="index,follow,max-snippet:-1,max-image-preview:large,max-video-preview:-1"
+    />
+
+    <link rel="canonical" href="https://srebarnoezero.com/hotel.html" />
+    <link
+      rel="alternate"
+      hreflang="bg"
+      href="https://srebarnoezero.com/hotel.html"
+    />
+    <link
+      rel="alternate"
+      hreflang="en"
+      href="https://srebarnoezero.com/hotel.html"
+    />
+    <link
+      rel="alternate"
+      hreflang="x-default"
+      href="https://srebarnoezero.com/hotel.html"
+    />
+
+    <meta property="og:type" content="website" />
+    <meta property="og:locale" content="bg_BG" />
+    <meta property="og:site_name" content="Сребърно езеро" />
+    <meta
+      property="og:title"
+      content="Хотел „Сребърно езеро“ | Стаи и апартаменти край Стара Загора"
+    />
+    <meta
+      property="og:description"
+      content="Стаи и апартаменти край Стара Загора. Резервации: 0894 343 435."
+    />
+    <meta property="og:url" content="https://srebarnoezero.com/hotel.html" />
+
+    <meta
+      property="og:image"
+      content="https://srebarnoezero.com/assets/og/cover.jpg"
+    />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta
+      name="twitter:title"
+      content="Хотел „Сребърно езеро“ | Стаи и апартаменти"
+    />
+    <meta
+      name="twitter:description"
+      content="Стаи и апартаменти край Стара Загора. Резервации: 0894 343 435."
+    />
+    <meta
+      name="twitter:image"
+      content="https://srebarnoezero.com/assets/og/hotel.jpg"
+    />
+
+    <link rel="icon" href="/favicon.ico" sizes="any" />
+    <link rel="icon" href="/icon.svg" type="image/svg+xml" />
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+    <meta name="theme-color" content="#0b0b0b" />
+
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- i18n -->
+    <script src="i18n.js" defer></script>
+
+    <!-- Schema: Hotel -->
+    <script type="application/ld+json" id="schema-hotel">
+      {
+        "@context": "https://schema.org",
+        "@type": "Hotel",
+        "name": "Хотел „Сребърно езеро“",
+        "url": "https://srebarnoezero.com/hotel.html",
+        "image": "https://srebarnoezero.com/assets/og/hotel.jpg",
+        "telephone": ["+359894343435", "+359899923227", "+359899923232"],
+        "email": ["hotel@srebarnoezero.com", "office@srebarnoezero.com"],
+        "sameAs": ["https://www.facebook.com/srebarnoezero/?locale=bg_BG"],
+        "geo": {
+          "@type": "GeoCoordinates",
+          "latitude": 42.48014725939604,
+          "longitude": 25.694507215663243
+        },
+        "hasMap": "https://www.google.com/maps?ll=42.48014725939604,25.694507215663243",
+        "address": {
+          "@type": "PostalAddress",
+          "addressCountry": "BG",
+          "addressLocality": "с. Колена",
+          "addressRegion": "Стара Загора",
+          "postalCode": "6000"
+        }
+      }
+    </script>
+  </head>
+
+  <body data-page="hotel">
     <header class="header">
-    <div class="header-inner">
+      <div class="header-inner">
         <div class="logo">
-            <img src="images/logo.png" width="100px" alt="SL">
+          <img src="images/logo.png" width="100px" alt="SL" />
         </div>
 
-        <!-- САНДВИЧ БУТОН ЗА МОБИЛНО -->
-        <button class="nav-toggle" aria-label="Отвори меню" aria-expanded="false">
-            ☰
+        <button
+          class="nav-toggle"
+          aria-label="Отвори меню"
+          aria-expanded="false"
+          data-i18n-attr="aria-label:nav.toggleLabel"
+        >
+          ☰
         </button>
 
         <nav class="nav">
-            <a href="index.html">Начало</a>
-            <a href="hotel.html" class="active">Хотел</a>
-            <a href="restaurant.html">Ресторант</a>
-            <a href="contact.html">Контакти</a>
-            <div class="icons-container">
-                <a href="tel:+359894343435" class="call-btn"> 
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640"><!--!Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2026 Fonticons, Inc.--><path fill="white" d="M224.2 89C216.3 70.1 195.7 60.1 176.1 65.4L170.6 66.9C106 84.5 50.8 147.1 66.9 223.3C104 398.3 241.7 536 416.7 573.1C493 589.3 555.5 534 573.1 469.4L574.6 463.9C580 444.2 569.9 423.6 551.1 415.8L453.8 375.3C437.3 368.4 418.2 373.2 406.8 387.1L368.2 434.3C297.9 399.4 241.3 341 208.8 269.3L253 233.3C266.9 222 271.6 202.9 264.8 186.3L224.2 89z"/></svg>
-                </a>
-                <a href="https://www.facebook.com/srebarnoezero/?locale=bg_BG"
-                    class="facebook-float"
-                    target="_blank"
-                    rel="noopener">
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640"><!--!Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2026 Fonticons, Inc.--><path fill="white" d="M576 320C576 178.6 461.4 64 320 64C178.6 64 64 178.6 64 320C64 440 146.7 540.8 258.2 568.5L258.2 398.2L205.4 398.2L205.4 320L258.2 320L258.2 286.3C258.2 199.2 297.6 158.8 383.2 158.8C399.4 158.8 427.4 162 438.9 165.2L438.9 236C432.9 235.4 422.4 235 409.3 235C367.3 235 351.1 250.9 351.1 292.2L351.1 320L434.7 320L420.3 398.2L351 398.2L351 574.1C477.8 558.8 576 450.9 576 320z"/></svg>
-                </a>
-                <button class="lang-switch" type="button" onclick="window.location.href='en/index.html'">
-                    EN
-                </button>
-            </div>
+          <a href="index.html" data-i18n="nav.home">Начало</a>
+          <a href="hotel.html" class="active" data-i18n="nav.hotel">Хотел</a>
+          <a href="restaurant.html" data-i18n="nav.restaurant">Ресторант</a>
+          <a href="contact.html" data-i18n="nav.contact">Контакти</a>
 
+          <div class="icons-container">
+            <a href="tel:+359894343435" class="call-btn">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640">
+                <path
+                  fill="white"
+                  d="M224.2 89C216.3 70.1 195.7 60.1 176.1 65.4L170.6 66.9C106 84.5 50.8 147.1 66.9 223.3C104 398.3 241.7 536 416.7 573.1C493 589.3 555.5 534 573.1 469.4L574.6 463.9C580 444.2 569.9 423.6 551.1 415.8L453.8 375.3C437.3 368.4 418.2 373.2 406.8 387.1L368.2 434.3C297.9 399.4 241.3 341 208.8 269.3L253 233.3C266.9 222 271.6 202.9 264.8 186.3L224.2 89z"
+                />
+              </svg>
+            </a>
+
+            <a
+              href="https://www.facebook.com/srebarnoezero/?locale=bg_BG"
+              class="facebook-float"
+              target="_blank"
+              rel="noopener"
+            >
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640">
+                <path
+                  fill="white"
+                  d="M576 320C576 178.6 461.4 64 320 64C178.6 64 64 178.6 64 320C64 440 146.7 540.8 258.2 568.5L258.2 398.2L205.4 398.2L205.4 320L258.2 320L258.2 286.3C258.2 199.2 297.6 158.8 383.2 158.8C399.4 158.8 427.4 162 438.9 165.2L438.9 236C432.9 235.4 422.4 235 409.3 235C367.3 235 351.1 250.9 351.1 292.2L351.1 320L434.7 320L420.3 398.2L351 398.2L351 574.1C477.8 558.8 576 450.9 576 320z"
+                />
+              </svg>
+            </a>
+
+            <button class="lang-switch" type="button" data-lang-toggle>
+              EN
+            </button>
+          </div>
         </nav>
-    </div>
-</header>
-
-    
+      </div>
+    </header>
 
     <section class="hero">
-    <video class="hero-video" autoplay muted loop playsinline>
+      <video class="hero-video" autoplay muted loop playsinline>
         <source src="videos/clip1.mp4" type="video/mp4" />
-        Вашият браузър не поддържа HTML5 видео.
-    </video>
+        <span data-i18n="hotel.videoFallback"
+          >Вашият браузър не поддържа HTML5 видео.</span
+        >
+      </video>
 
-    <div class="hero-overlay"></div>
-        <div class="hero-inner-hotel">
-            <div>
-                <div class="hero-eyebrow">Хотел ⋆ Настаняване</div>
-                <h1 class="hero-title-hotel">Хотел</h1>
-                <h1 class="hero-title-hotel">„Сребърно езеро“</h1>
-                <p class="hero-subtitle">
-                    Уют и комфорт сред природата на Сърнена Средна гора – само на 16 км от Стара Загора,
-                    с чудесен изглед към язовир Кумруджа.
-                </p>
-                <div class="hero-badges">
-                    <span class="badge">Стаи и апартамент</span>
-                    <span class="badge">Безплатен паркинг и Wi-Fi</span>
-                    <span class="badge">Тераса с изглед</span>
-                </div>
-            </div>
-            <aside class="booking-card-hotel">
-                <div class="booking-header">
-                    <h3>Резервации</h3>
-                </div>
-                <div>
-                    <p style="margin:0; font-size:0.9rem;">
-                        <strong>Телефон:</strong> 0894 343 435<br />
-                        <strong>Имейл:</strong> hotel@srebarnoezero.com
-                    </p>
-                    <p style="margin:0.75rem 0 0; font-size:0.85rem; color: white; width: 380px;">
-                        При запитване посочете желани дати, брой гости и предпочитан тип стая.
-                    </p>
-                </div>
-            </aside>
+      <div class="hero-overlay"></div>
+
+      <div class="hero-inner-hotel">
+        <div>
+          <div class="hero-eyebrow" data-i18n="hotel.heroEyebrow">
+            Хотел ⋆ Настаняване
+          </div>
+
+          <h1 class="hero-title-hotel" data-i18n="hotel.heroTitle1">Хотел</h1>
+          <h1 class="hero-title-hotel" data-i18n="hotel.heroTitle2">
+            „Сребърно езеро“
+          </h1>
+
+          <p class="hero-subtitle" data-i18n="hotel.heroSubtitle">
+            Уют и комфорт сред природата на Сърнена Средна гора – само на 16 км
+            от Стара Загора, с чудесен изглед към язовир Кумруджа.
+          </p>
+
+          <div class="hero-badges">
+            <span class="badge" data-i18n="hotel.badge1"
+              >Стаи и апартамент</span
+            >
+            <span class="badge" data-i18n="hotel.badge2"
+              >Безплатен паркинг и Wi-Fi</span
+            >
+            <span class="badge" data-i18n="hotel.badge3">Тераса с изглед</span>
+          </div>
         </div>
+
+        <aside class="booking-card-hotel">
+          <div class="booking-header">
+            <h3 data-i18n="hotel.resTitle">Резервации</h3>
+          </div>
+
+          <div>
+            <p
+              style="margin: 0; font-size: 0.9rem"
+              data-i18n="hotel.resContacts"
+            >
+              <strong>Телефон:</strong> 0894 343 435<br />
+              <strong>Имейл:</strong> hotel@srebarnoezero.com
+            </p>
+
+            <p
+              style="
+                margin: 0.75rem 0 0;
+                font-size: 0.85rem;
+                color: white;
+                width: 380px;
+              "
+              data-i18n="hotel.resHint"
+            >
+              При запитване посочете желани дати, брой гости и предпочитан тип
+              стая.
+            </p>
+          </div>
+        </aside>
+      </div>
     </section>
 
     <section class="section alt">
-        <div class="section-inner">
-            <div class="section-header">
-                <h2>Удобства в хотела</h2>
-                <p>
-                    Сребърно езеро е хотел в Стара Загора, който предлага уют, добра локация и
-                    практични удобства за кратък или по-дълъг престой.
-                </p>
-            </div>
-            <div class="grid">
-                <article class="card-nastanqvane">
-                    <div class="card-header">
-                        <h3 class="card-title">Настаняване</h3>
-                    </div>
-                    <p style="color: white;">
-                        Хотелът разполага с хотелски стаи и апартамент с чудесен изглед към язовира.
-                        Подходящ е за бизнес гости, семейства и двойки.
-                    </p>
-                    <ul class="info-list">
-                        <li>• Модерно обзавеждане</li>
-                        <li>• Собствен санитарен възел</li>
-                        <li>• Телевизор и Wi-Fi</li>
-                        <li>• Централно отопление</li>
-                    </ul>
-                </article>
-
-                <article class="card-udobstva">
-                    <div class="card-header">
-                        <h3 class="card-title">Общи удобства</h3>
-                    </div>
-                    <ul class="info-list">
-                        <li>• Уют и комфорт сред природата</li>
-                        <li>• Тераса с изглед към язовир Кумруджа</li>
-                        <li>• Безплатен паркинг</li>
-                        <li>• Безплатен Wi-Fi на територията на хотела и ресторанта</li>
-                        <li>• Качествено и коректно обслужване</li>
-                    </ul>
-                </article>
-            </div>
+      <div class="section-inner">
+        <div class="section-header">
+          <h2 data-i18n="hotel.amenitiesTitle">Удобства в хотела</h2>
+          <p data-i18n="hotel.amenitiesText">
+            Сребърно езеро е хотел в Стара Загора, който предлага уют, добра
+            локация и практични удобства за кратък или по-дълъг престой.
+          </p>
         </div>
+
+        <div class="grid">
+          <article class="card-nastanqvane">
+            <div class="card-header">
+              <h3 class="card-title" data-i18n="hotel.accTitle">Настаняване</h3>
+            </div>
+            <p style="color: white" data-i18n="hotel.accText">
+              Хотелът разполага с хотелски стаи и апартамент с чудесен изглед
+              към язовира. Подходящ е за бизнес гости, семейства и двойки.
+            </p>
+            <ul class="info-list">
+              <li data-i18n="hotel.accLi1">• Модерно обзавеждане</li>
+              <li data-i18n="hotel.accLi2">• Собствен санитарен възел</li>
+              <li data-i18n="hotel.accLi3">• Телевизор и Wi-Fi</li>
+              <li data-i18n="hotel.accLi4">• Централно отопление</li>
+            </ul>
+          </article>
+
+          <article class="card-udobstva">
+            <div class="card-header">
+              <h3 class="card-title" data-i18n="hotel.commonTitle">
+                Общи удобства
+              </h3>
+            </div>
+            <ul class="info-list">
+              <li data-i18n="hotel.commonLi1">
+                • Уют и комфорт сред природата
+              </li>
+              <li data-i18n="hotel.commonLi2">
+                • Тераса с изглед към язовир Кумруджа
+              </li>
+              <li data-i18n="hotel.commonLi3">• Безплатен паркинг</li>
+              <li data-i18n="hotel.commonLi4">
+                • Безплатен Wi-Fi на територията на хотела и ресторанта
+              </li>
+              <li data-i18n="hotel.commonLi5">
+                • Качествено и коректно обслужване
+              </li>
+            </ul>
+          </article>
+        </div>
+      </div>
     </section>
 
-    <!-- ROOM TYPES (ROOM CARDS) -->
     <section class="section">
-        <div class="section-inner">
-            <div class="section-header">
-                <h2>Типове помещения</h2>
-            </div>
-            <div class="grid">
-                <article class="room-card">
-                    <div
-                        class="room-image room-image-clickable"
-                        data-images="images/standart.jpg|images/standart1.jpg|images/standart2.jpg|images/standart3.jpg|images/standart4.jpg|images/standart5.jpg"
-                        style="background-image:url(images/standart.jpg);">
-                    </div>
-                    <div class="room-body">
-                        <div class="room-meta">
-                            <h3>Стандартна стая</h3>
-                            <span class="room-price">от 30 €/вечер</span>
-                        </div>
-                        <p style="margin:0 0 0.5rem; color:var(--muted);">
-                            Подходяща за едно или две лица. Възможност за двойно или единично настаняване.
-                        </p>
-                        <ul class="info-list">
-                            <li>• Спалня или две отделни легла</li>
-                            <li>• Телевизор, Wi-Fi, климатик</li>
-                        </ul>
-                    </div>
-                </article>
-
-                <article class="room-card">
-                    <div
-                        class="room-image room-image-clickable"
-                        data-images="images/deluxe1.webp|images/deluxe2.webp|images/deluxe3.webp|images/deluxe4.webp"
-                        style="background-image:url(images/deluxe1.webp);">
-                    </div>
-                    <div class="room-body">
-                        <div class="room-meta">
-                            <h3>Делукс стая</h3>
-                            <span class="room-price">от 36 €./вечер</span>
-                        </div>
-                        <p style="margin:0 0 0.5rem; color:var(--muted);">
-                            Повече пространство и комфорт – подходяща за семейства с дете или по-дълъг престой.
-                        </p>
-                        <ul class="info-list">
-                            <li>• Просторна стая</li>
-                            <li>• Част от стаите с по-големи тераси</li>
-                        </ul>
-                    </div>
-                </article>
-
-                <article class="room-card">
-                    <div
-                        class="room-image room-image-clickable"
-                        data-images="images/apart1.webp|images/apart2.webp|images/apart3.jpg|images/apart4.jpg|images/apart5.jpg|images/apart6.jpg|images/apart7.jpg"
-                        style="background-image:url(images/apart1.webp);">
-                    </div>
-                    <div class="room-body">
-                        <div class="room-meta">
-                            <h3>Студио</h3>
-                            <span class="room-price">55 €/вечер</span>
-                        </div>
-                        <p style="margin:0 0 0.5rem; color:var(--muted);">
-                            Студио за двама на последен етаж с хидромасажна вана – идеален за специални поводи.
-                        </p>
-                    </div>
-                </article>
-            </div>
+      <div class="section-inner">
+        <div class="section-header">
+          <h2 data-i18n="hotel.roomTypesTitle">Типове помещения</h2>
         </div>
+
+        <div class="grid">
+          <article class="room-card">
+            <div
+              class="room-image room-image-clickable"
+              data-images="images/standart.webp|images/standart1.webp|images/standart2.webp|images/standart3.webp|images/standart4.webp|images/standart5.webp"
+              style="background-image: url(images/standart.webp)"
+            ></div>
+            <div class="room-body">
+              <div class="room-meta">
+                <h3 data-i18n="hotel.room1Title">Стандартна стая</h3>
+                <span class="room-price" data-i18n="hotel.room1Price"
+                  >от 30 €/вечер</span
+                >
+              </div>
+              <p
+                style="margin: 0 0 0.5rem; color: var(--muted)"
+                data-i18n="hotel.room1Text"
+              >
+                Подходяща за едно или две лица. Възможност за двойно или
+                единично настаняване.
+              </p>
+              <ul class="info-list">
+                <li data-i18n="hotel.room1Li1">
+                  • Спалня или две отделни легла
+                </li>
+                <li data-i18n="hotel.room1Li2">• Телевизор, Wi-Fi, климатик</li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="room-card">
+            <div
+              class="room-image room-image-clickable"
+              data-images="images/deluxe1.webp|images/deluxe2.webp|images/deluxe3.webp|images/deluxe4.webp"
+              style="background-image: url(images/deluxe1.webp)"
+            ></div>
+            <div class="room-body">
+              <div class="room-meta">
+                <h3 data-i18n="hotel.room2Title">Делукс стая</h3>
+                <span class="room-price" data-i18n="hotel.room2Price"
+                  >от 36 €./вечер</span
+                >
+              </div>
+              <p
+                style="margin: 0 0 0.5rem; color: var(--muted)"
+                data-i18n="hotel.room2Text"
+              >
+                Повече пространство и комфорт – подходяща за семейства с дете
+                или по-дълъг престой.
+              </p>
+              <ul class="info-list">
+                <li data-i18n="hotel.room2Li1">• Просторна стая</li>
+                <li data-i18n="hotel.room2Li2">
+                  • Част от стаите с по-големи тераси
+                </li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="room-card">
+            <div
+              class="room-image room-image-clickable"
+              data-images="images/apart1.webp|images/apart2.webp|images/apart3.webp|images/apart4.webp|images/apart5.webp|images/apart6.webp|images/apart7.webp"
+              style="background-image: url(images/apart1.webp)"
+            ></div>
+            <div class="room-body">
+              <div class="room-meta">
+                <h3 data-i18n="hotel.room3Title">Студио</h3>
+                <span class="room-price" data-i18n="hotel.room3Price"
+                  >55 €/вечер</span
+                >
+              </div>
+              <p
+                style="margin: 0 0 0.5rem; color: var(--muted)"
+                data-i18n="hotel.room3Text"
+              >
+                Студио за двама на последен етаж с хидромасажна вана – идеален
+                за специални поводи.
+              </p>
+            </div>
+          </article>
+        </div>
+      </div>
     </section>
 
-    <!-- PRICES SECTION -->
-<section class="section alt">
-    <div class="section-inner">
+    <section class="section alt">
+      <div class="section-inner">
         <div class="section-header">
-            <h2>Цени</h2>
+          <h2 data-i18n="hotel.pricesTitle">Цени</h2>
         </div>
 
-        <div style="overflow-x:auto; box-shadow: 0 8px 20px rgba(0,0,0,0.6);">
-            <table style="
-                width:100%;
-                border-collapse:collapse;
-                background:white;
-                border-radius:18px;
-                overflow:hidden;
-                font-size:1rem;
-            ">
-                <tr style="background:#f3f5f9;">
-                    <th style="padding:14px; text-align:left;">Тип помещение</th>
-                    <th style="padding:14px; text-align:center;">Стандартна стая</th>
-                    <th style="padding:14px; text-align:center;">Стая Делукс</th>
-                </tr>
+        <div
+          style="overflow-x: auto; box-shadow: 0 8px 20px rgba(0, 0, 0, 0.6)"
+        >
+          <table
+            style="
+              width: 100%;
+              border-collapse: collapse;
+              background: white;
+              border-radius: 18px;
+              overflow: hidden;
+              font-size: 1rem;
+            "
+          >
+            <tr style="background: #f3f5f9">
+              <th
+                style="padding: 14px; text-align: left"
+                data-i18n="hotel.tableTh1"
+              >
+                Тип помещение
+              </th>
+              <th
+                style="padding: 14px; text-align: center"
+                data-i18n="hotel.tableTh2"
+              >
+                Стандартна стая
+              </th>
+              <th
+                style="padding: 14px; text-align: center"
+                data-i18n="hotel.tableTh3"
+              >
+                Стая Делукс
+              </th>
+            </tr>
 
-                <tr>
-                    <td style="padding:14px;">Единична</td>
-                    <td style="padding:14px; text-align:center;">30.00€ / 58.67 лв.</td>
-                    <td style="padding:14px; text-align:center;">36.00€ / 70.41 лв.</td>
-                </tr>
+            <tr>
+              <td style="padding: 14px" data-i18n="hotel.row1Col1">Единична</td>
+              <td
+                style="padding: 14px; text-align: center"
+                data-i18n="hotel.row1Col2"
+              >
+                30.00€ / 58.67 лв.
+              </td>
+              <td
+                style="padding: 14px; text-align: center"
+                data-i18n="hotel.row1Col3"
+              >
+                36.00€ / 70.41 лв.
+              </td>
+            </tr>
 
-                <tr style="background:#f9fafb;">
-                    <td style="padding:14px;">Двойна /с 2 легла или общо двойно легло – спалня/</td>
-                    <td style="padding:14px; text-align:center;">36.00€ / 70.41 лв.</td>
-                    <td style="padding:14px; text-align:center;">46.00€ / 89.97 лв.</td>
-                </tr>
+            <tr style="background: #f9fafb">
+              <td style="padding: 14px" data-i18n="hotel.row2Col1">
+                Двойна /с 2 легла или общо двойно легло – спалня/
+              </td>
+              <td
+                style="padding: 14px; text-align: center"
+                data-i18n="hotel.row2Col2"
+              >
+                36.00€ / 70.41 лв.
+              </td>
+              <td
+                style="padding: 14px; text-align: center"
+                data-i18n="hotel.row2Col3"
+              >
+                46.00€ / 89.97 лв.
+              </td>
+            </tr>
 
-                <tr>
-                    <td style="padding:14px;">Студио/апартамент за двама с общо двойно легло – спалня</td>
-                    <td style="padding:14px; text-align:center;">–</td>
-                    <td style="padding:14px; text-align:center;">55.00€ / 107.57 лв.</td>
-                </tr>
-            </table>
+            <tr>
+              <td style="padding: 14px" data-i18n="hotel.row3Col1">
+                Студио/апартамент за двама с общо двойно легло – спалня
+              </td>
+              <td
+                style="padding: 14px; text-align: center"
+                data-i18n="hotel.row3Col2"
+              >
+                –
+              </td>
+              <td
+                style="padding: 14px; text-align: center"
+                data-i18n="hotel.row3Col3"
+              >
+                55.00€ / 107.57 лв.
+              </td>
+            </tr>
+          </table>
         </div>
-    </div>
-</section>
+      </div>
+    </section>
 
-<!-- LOBBY BAR SECTION -->
-<section class="section">
-    <div class="section-inner">
+    <section class="section">
+      <div class="section-inner">
         <div class="section-header">
-            <h2>Лоби бар</h2>
+          <h2 data-i18n="hotel.lobbyTitle">Лоби бар</h2>
         </div>
 
         <div class="lobby-bar">
-        <img src="images/lobby1.webp" class="lightbox-img" alt="Лоби бар">
-        <img src="images/lobby2.webp" class="lightbox-img" alt="Лоби бар">
-        <img src="images/lobby3.webp" class="lightbox-img" alt="Лоби бар">
-        <img src="images/lobby4.webp" class="lightbox-img" alt="Лоби бар">
+          <img src="images/lobby1.webp" class="lightbox-img" alt="Лоби бар" />
+          <img src="images/lobby2.webp" class="lightbox-img" alt="Лоби бар" />
+          <img src="images/lobby3.webp" class="lightbox-img" alt="Лоби бар" />
+          <img src="images/lobby4.webp" class="lightbox-img" alt="Лоби бар" />
         </div>
 
-
-        <p style="margin-top:1.5rem; color:white; text-align:center; font-size:1rem;">
-            Хотелът разполага и с лоби бар, където гостите могат да се насладят на закуска и да се отдадат на вкусни предложения, придружени
-            от чаша свежо сутрешно кафе или чай. В слънчевите сутрини гостите могат да се възползват от маси на открито за още по-приятно изживяване.
+        <p
+          style="
+            margin-top: 1.5rem;
+            color: white;
+            text-align: center;
+            font-size: 1rem;
+          "
+          data-i18n="hotel.lobbyText"
+        >
+          Хотелът разполага и с лоби бар, където гостите могат да се насладят на
+          закуска и да се отдадат на вкусни предложения, придружени от чаша
+          свежо сутрешно кафе или чай. В слънчевите сутрини гостите могат да се
+          възползват от маси на открито за още по-приятно изживяване.
         </p>
-    </div>
-</section>
+      </div>
+    </section>
 
-
-    <!-- FOOTER -->
     <footer class="footer">
-        <div class="footer-inner">
-            <span>© <span id="year"></span> Хотел „Сребърно езеро“</span>
-            <span>Резервации: 0894 343 435</span>
-        </div>
+      <div class="footer-inner">
+        <span data-i18n="hotel.footerLeft"
+          >© <span id="year"></span> Хотел „Сребърно езеро“</span
+        >
+        <span data-i18n="hotel.footerRight">Резервации: 0894 343 435</span>
+      </div>
     </footer>
+
     <script>
-document.addEventListener('DOMContentLoaded', function () {
-    // Year in footer
-    const yearEl = document.getElementById("year");
-    if (yearEl) {
-        yearEl.textContent = new Date().getFullYear();
-    }
+      document.addEventListener("DOMContentLoaded", function () {
+        const yearEl = document.getElementById("year");
+        if (yearEl) yearEl.textContent = new Date().getFullYear();
 
-    // Burger menu
-    const navToggle = document.querySelector('.nav-toggle');
-    const nav = document.querySelector('.nav');
+        const navToggle = document.querySelector(".nav-toggle");
+        const nav = document.querySelector(".nav");
 
-    if (navToggle && nav) {
-        navToggle.addEventListener('click', () => {
-            const isOpen = nav.classList.toggle('nav-open');
-            navToggle.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
-            navToggle.textContent = isOpen ? '✕' : '☰';
-        });
-    }
+        if (navToggle && nav) {
+          navToggle.addEventListener("click", () => {
+            const isOpen = nav.classList.toggle("nav-open");
+            navToggle.setAttribute("aria-expanded", isOpen ? "true" : "false");
+            navToggle.textContent = isOpen ? "✕" : "☰";
+          });
+        }
 
-    // GALLERY / LIGHTBOX for rooms
-    const lightbox = document.getElementById('room-lightbox');
-    if (!lightbox) return;
+        const lightbox = document.getElementById("room-lightbox");
+        if (!lightbox) return;
 
-    const imgEl   = lightbox.querySelector('.lightbox-image');
-    const prevBtn = lightbox.querySelector('.lightbox-prev');
-    const nextBtn = lightbox.querySelector('.lightbox-next');
-    const closeBtn = lightbox.querySelector('.lightbox-close');
-    const backdrop = lightbox.querySelector('.lightbox-backdrop');
+        const imgEl = lightbox.querySelector(".lightbox-image");
+        const prevBtn = lightbox.querySelector(".lightbox-prev");
+        const nextBtn = lightbox.querySelector(".lightbox-next");
+        const closeBtn = lightbox.querySelector(".lightbox-close");
+        const backdrop = lightbox.querySelector(".lightbox-backdrop");
 
-    let currentImages = [];
-    let currentIndex = 0;
+        let currentImages = [];
+        let currentIndex = 0;
 
-    function showImage(index) {
-        if (!currentImages.length) return;
-        if (index < 0) index = currentImages.length - 1;
-        if (index >= currentImages.length) index = 0;
-        currentIndex = index;
-        imgEl.src = currentImages[currentIndex];
-    }
+        function showImage(index) {
+          if (!currentImages.length) return;
+          if (index < 0) index = currentImages.length - 1;
+          if (index >= currentImages.length) index = 0;
+          currentIndex = index;
+          imgEl.src = currentImages[currentIndex];
+        }
 
-    function openLightbox(images, startIndex) {
-        currentImages = images;
-        showImage(startIndex || 0);
-        lightbox.classList.add('open');
-        document.body.style.overflow = 'hidden';
-    }
+        function openLightbox(images, startIndex) {
+          currentImages = images;
+          showImage(startIndex || 0);
+          lightbox.classList.add("open");
+          document.body.style.overflow = "hidden";
+        }
 
-    function closeLightbox() {
-        lightbox.classList.remove('open');
-        document.body.style.overflow = '';
-    }
+        function closeLightbox() {
+          lightbox.classList.remove("open");
+          document.body.style.overflow = "";
+        }
 
-    // Клик по снимка на стая
-    document.querySelectorAll('.room-image-clickable').forEach(el => {
-        el.addEventListener('click', () => {
-            const data = el.dataset.images || '';
-            const imgs = data.split('|').map(s => s.trim()).filter(Boolean);
+        document.querySelectorAll(".room-image-clickable").forEach((el) => {
+          el.addEventListener("click", () => {
+            const data = el.dataset.images || "";
+            const imgs = data
+              .split("|")
+              .map((s) => s.trim())
+              .filter(Boolean);
             if (!imgs.length) return;
             openLightbox(imgs, 0);
+          });
         });
-    });
 
-    prevBtn.addEventListener('click', () => showImage(currentIndex - 1));
-    nextBtn.addEventListener('click', () => showImage(currentIndex + 1));
-    closeBtn.addEventListener('click', closeLightbox);
-    backdrop.addEventListener('click', closeLightbox);
+        prevBtn.addEventListener("click", () => showImage(currentIndex - 1));
+        nextBtn.addEventListener("click", () => showImage(currentIndex + 1));
+        closeBtn.addEventListener("click", closeLightbox);
+        backdrop.addEventListener("click", closeLightbox);
 
-    document.addEventListener('keydown', e => {
-        if (!lightbox.classList.contains('open')) return;
-        if (e.key === 'Escape') closeLightbox();
-        if (e.key === 'ArrowLeft') showImage(currentIndex - 1);
-        if (e.key === 'ArrowRight') showImage(currentIndex + 1);
-    });
-});
+        document.addEventListener("keydown", (e) => {
+          if (!lightbox.classList.contains("open")) return;
+          if (e.key === "Escape") closeLightbox();
+          if (e.key === "ArrowLeft") showImage(currentIndex - 1);
+          if (e.key === "ArrowRight") showImage(currentIndex + 1);
+        });
+      });
 
-const images = document.querySelectorAll(".lightbox-img");
+      const images = document.querySelectorAll(".lightbox-img");
 
-const lightbox = document.createElement("div");
-lightbox.className = "lightbox";
-document.body.appendChild(lightbox);
+      const lightbox = document.createElement("div");
+      lightbox.className = "lightbox";
+      document.body.appendChild(lightbox);
 
-const lightboxImg = document.createElement("img");
-lightbox.appendChild(lightboxImg);
+      const lightboxImg = document.createElement("img");
+      lightbox.appendChild(lightboxImg);
 
-// open
-images.forEach(img => {
-    img.addEventListener("click", () => {
-        lightboxImg.src = img.src;
-        lightbox.classList.add("active");
-    });
-});
+      images.forEach((img) => {
+        img.addEventListener("click", () => {
+          lightboxImg.src = img.src;
+          lightbox.classList.add("active");
+        });
+      });
 
-// close on click
-lightbox.addEventListener("click", () => {
-    lightbox.classList.remove("active");
-});
-
-// close on ESC
-document.addEventListener("keydown", e => {
-    if (e.key === "Escape") {
+      lightbox.addEventListener("click", () => {
         lightbox.classList.remove("active");
-    }
-});
-</script>
+      });
 
+      document.addEventListener("keydown", (e) => {
+        if (e.key === "Escape") {
+          lightbox.classList.remove("active");
+        }
+      });
+    </script>
 
-<!-- Lightbox за снимките на стаите -->
-<div class="room-lightbox" id="room-lightbox">
-    <div class="lightbox-backdrop"></div>
+    <div class="room-lightbox" id="room-lightbox">
+      <div class="lightbox-backdrop"></div>
 
-    <div class="lightbox-inner">
+      <div class="lightbox-inner">
         <button class="lightbox-close" type="button">×</button>
         <button class="lightbox-prev" type="button">‹</button>
 
         <img class="lightbox-image" src="" alt="Room photo" />
 
         <button class="lightbox-next" type="button">›</button>
+      </div>
     </div>
-</div>
-
-
-</body>
+  </body>
 </html>
