@@ -104,7 +104,7 @@
       },
       reviews: {
         title: "⭐ Какво казват нашите гости ⭐",
-        googleLink: "View all Google reviews",
+        googleLink: "Виж всички Google ревюта",
       },
       footer: {
         copyright:
