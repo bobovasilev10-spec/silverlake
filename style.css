@@ -1319,6 +1319,26 @@ a[href^="tel"]:hover {
        за да не се бият. */
   }
 
+  /* ✅ iOS/Safari fix: backdrop-filter кара label текста да изчезва */
+@supports (-webkit-touch-callout: none) {
+  .booking-card {
+    -webkit-backdrop-filter: none !important;
+    backdrop-filter: none !important;
+  }
+}
+
+/* ✅ Mobile readability */
+@media (max-width: 768px) {
+  .booking-field label {
+    color: #334155;          /* по-тъмен от --muted, за да е 100% видим */
+    font-size: 0.8rem;
+    letter-spacing: 0.08em;
+    line-height: 1.2;
+    white-space: normal;
+  }
+}
+
+
   /* HERO – една колона: текст отгоре, форма отдолу */
   @media (max-width: 768px) {
     /* HERO – текстът и booking-card да станат една колона */
@@ -1499,3 +1519,4 @@ a[href^="tel"]:hover {
     gap: 0.4rem;
   }
 }
+
