@@ -244,6 +244,41 @@ body {
   z-index: 1;
 }
 
+/* ===== HERO SCROLL ICON (SVG) ===== */
+.hero-scroll {
+  position: absolute;
+  left: 50%;
+  bottom: 8px;              /* най-долу върху видеото */
+  transform: translateX(-50%);
+  z-index: 2;               /* над overlay (z=1), под hero-inner (z=2) е ок */
+  cursor: pointer;
+}
+
+.hero-scroll img {
+  width: 130px;
+  height: auto;
+  opacity: 0.95;
+
+  /* бял glow */
+  filter: drop-shadow(0 0 10px rgba(255, 255, 255, 0.4))
+          drop-shadow(0 0 26px rgba(255, 255, 255, 0.2));
+
+  transition: transform 0.25s ease, filter 0.25s ease, opacity 0.25s ease;
+}
+
+.hero-scroll:hover img {
+  transform: translateY(-3px);
+  opacity: 1;
+  filter: drop-shadow(0 0 14px rgba(255, 255, 255, 0.6))
+          drop-shadow(0 0 38px rgba(255, 255, 255, 0.3));
+}
+
+@media (max-width: 768px) {
+  .hero-scroll { bottom: 6px; }
+  .hero-scroll img { width: 60px; }
+}
+
+
 /* Съдържанието на hero да е над видеото + overlay */
 .hero-inner {
   position: relative;
@@ -1519,4 +1554,11 @@ a[href^="tel"]:hover {
     gap: 0.4rem;
   }
 }
+
+@media (max-width: 768px) {
+  .hero-scroll {
+    display: none;
+  }
+}
+
 
