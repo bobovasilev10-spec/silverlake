@@ -1,7 +1,6 @@
 <!doctype html>
 <html lang="bg">
   <head>
-    <link rel="icon" href="/srebarno.favicon.svg" type="image/svg+xml">
     <meta charset="utf-8" />
     <meta http-equiv="x-ua-compatible" content="ie=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -167,6 +166,9 @@
       </video>
 
       <div class="hero-overlay"></div>
+      <a href="#after-hero" class="hero-scroll" aria-label="Scroll down">
+        <img src="images/scroll-icon.webp" alt="Scroll down" />
+      </a>
 
       <div class="hero-inner-contact">
         <div class="hero-contacts">
@@ -219,7 +221,7 @@
       </div>
     </section>
 
-    <section class="section alt">
+    <section class="section alt-index" id="after-hero">
       <div class="section-inner">
         <div class="grid">
           <div>
@@ -380,7 +382,16 @@
           navToggle.textContent = isOpen ? "✕" : "☰";
         });
       }
+
+      const heroScroll = document.querySelector(".hero-scroll");
+      if (heroScroll) {
+        heroScroll.addEventListener("click", (e) => {
+          e.preventDefault();
+          document
+            .querySelector("#after-hero")
+            ?.scrollIntoView({ behavior: "smooth" });
+        });
+      }
     </script>
   </body>
 </html>
-
