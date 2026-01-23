@@ -182,6 +182,11 @@
 
       <div class="hero-overlay"></div>
 
+      <a href="#after-hero" class="hero-scroll" aria-label="Scroll down">
+  <img src="images/scroll-icon.webp" alt="Scroll down" />
+</a>
+
+
       <div class="hero-inner">
         <div>
           <div class="hero-eyebrow" data-i18n="hero.eyebrow">
@@ -322,7 +327,7 @@
     </section>
 
     <!-- РЕСТОРАНТ / ХОТЕЛ ХАЙЛАЙТ -->
-    <section class="section alt-index">
+    <section class="section alt-index" id="after-hero">
       <div class="section-inner">
         <div class="section-header">
           <h2 data-i18n="complex.title">Комплекс „Сребърно езеро“</h2>
@@ -832,6 +837,14 @@ if (wrapper) {
     },
     { passive: true }
   );
+}
+
+const heroScroll = document.querySelector(".hero-scroll");
+if (heroScroll) {
+  heroScroll.addEventListener("click", (e) => {
+    e.preventDefault();
+    document.querySelector("#after-hero")?.scrollIntoView({ behavior: "smooth" });
+  });
 }
 
 
