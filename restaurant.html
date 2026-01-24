@@ -376,7 +376,82 @@
             ?.scrollIntoView({ behavior: "smooth" });
         });
       }
+      
+  // ===== GA4 EVENTS (custom) =====
+  // Safe wrapper (ако gtag не е наличен по някаква причина)
+  function track(eventName, params = {}) {
+    try {
+      if (typeof gtag === "function") gtag("event", eventName, params);
+    } catch (e) {}
+  }
+
+  // 1) Phone click (call button)
+  const phoneLinks = document.querySelectorAll('a[href^="tel:"]');
+  phoneLinks.forEach((a) => {
+    a.addEventListener("click", () => {
+      track("click_phone", {
+        phone: a.getAttribute("href")?.replace("tel:", "") || "",
+        page: document.body?.dataset?.page || location.pathname,
+      });
+    });
+  });
+
+  // 2) Promo / menu click (your "Виж предложението")
+  const promoBtn = document.querySelector('.card-promotion1 a.btn');
+  if (promoBtn) {
+    promoBtn.addEventListener("click", () => {
+      track("click_promo_offer", {
+        target: promoBtn.getAttribute("href") || "",
+        page: document.body?.dataset?.page || location.pathname,
+      });
+    });
+  }
+
+  // 3) Booking form submit (booking-request.php)
+  const bookingForm = document.querySelector('form[action="booking-request.php"]');
+  if (bookingForm) {
+    bookingForm.addEventListener("submit", () => {
+      const checkin = bookingForm.querySelector("#checkin")?.value || "";
+      const checkout = bookingForm.querySelector("#checkout")?.value || "";
+      const adults = bookingForm.querySelector("#adults")?.value || "";
+      const children = bookingForm.querySelector("#children")?.value || "";
+
+      track("submit_booking_request", {
+        checkin,
+        checkout,
+        adults,
+        children,
+        page: document.body?.dataset?.page || location.pathname,
+      });
+    });
+  }
+
+  // 4) Contact form submit (send-mail.php)
+  const contactForm = document.querySelector('form[action="send-mail.php"]');
+  if (contactForm) {
+    contactForm.addEventListener("submit", () => {
+      track("submit_contact_form", {
+        page: document.body?.dataset?.page || location.pathname,
+      });
+    });
+  }
+
+  // 5) Language switch (your EN button)
+  const langBtn = document.querySelector("[data-lang-toggle]");
+  if (langBtn) {
+    langBtn.addEventListener("click", () => {
+      // Предполагам, че твоят i18n.js toggle-ва език. Тук пазим "следващия" език по текста на бутона.
+      const label = (langBtn.textContent || "").trim().toLowerCase();
+      const nextLang = label === "en" ? "en" : "bg";
+
+      track("language_switch", {
+        language: nextLang,
+        page: document.body?.dataset?.page || location.pathname,
+      });
+    });
+  }
     </script>
   </body>
 </html>
+
 
