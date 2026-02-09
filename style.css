@@ -248,9 +248,9 @@ body {
 .hero-scroll {
   position: absolute;
   left: 50%;
-  bottom: 8px;              /* най-долу върху видеото */
+  bottom: 8px; /* най-долу върху видеото */
   transform: translateX(-50%);
-  z-index: 2;               /* над overlay (z=1), под hero-inner (z=2) е ок */
+  z-index: 2; /* над overlay (z=1), под hero-inner (z=2) е ок */
   cursor: pointer;
 }
 
@@ -261,23 +261,29 @@ body {
 
   /* бял glow */
   filter: drop-shadow(0 0 10px rgba(255, 255, 255, 0.4))
-          drop-shadow(0 0 26px rgba(255, 255, 255, 0.2));
+    drop-shadow(0 0 26px rgba(255, 255, 255, 0.2));
 
-  transition: transform 0.25s ease, filter 0.25s ease, opacity 0.25s ease;
+  transition:
+    transform 0.25s ease,
+    filter 0.25s ease,
+    opacity 0.25s ease;
 }
 
 .hero-scroll:hover img {
   transform: translateY(-3px);
   opacity: 1;
   filter: drop-shadow(0 0 14px rgba(255, 255, 255, 0.6))
-          drop-shadow(0 0 38px rgba(255, 255, 255, 0.3));
+    drop-shadow(0 0 38px rgba(255, 255, 255, 0.3));
 }
 
 @media (max-width: 768px) {
-  .hero-scroll { bottom: 6px; }
-  .hero-scroll img { width: 60px; }
+  .hero-scroll {
+    bottom: 6px;
+  }
+  .hero-scroll img {
+    width: 60px;
+  }
 }
-
 
 /* Съдържанието на hero да е над видеото + overlay */
 .hero-inner {
@@ -760,6 +766,17 @@ body {
   background:
     linear-gradient(to bottom, rgba(81, 85, 94, 0.1), rgba(24, 29, 41, 0.1)),
     url("images/promo.webp") center/cover no-repeat;
+}
+
+.card-promotion2 {
+  background-color: rgba(128, 128, 128, 0.2);
+  border-radius: var(--radius-lg);
+  padding: 1.25rem 1.35rem;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+  text-align: center;
+  background:
+    linear-gradient(to bottom, rgba(81, 85, 94, 0.1), rgba(24, 29, 41, 0.1)),
+    url("images/flag.webp") center/cover no-repeat;
 }
 
 .card-restaurant {
@@ -1355,24 +1372,23 @@ a[href^="tel"]:hover {
   }
 
   /* ✅ iOS/Safari fix: backdrop-filter кара label текста да изчезва */
-@supports (-webkit-touch-callout: none) {
-  .booking-card {
-    -webkit-backdrop-filter: none !important;
-    backdrop-filter: none !important;
+  @supports (-webkit-touch-callout: none) {
+    .booking-card {
+      -webkit-backdrop-filter: none !important;
+      backdrop-filter: none !important;
+    }
   }
-}
 
-/* ✅ Mobile readability */
-@media (max-width: 768px) {
-  .booking-field label {
-    color: #334155;          /* по-тъмен от --muted, за да е 100% видим */
-    font-size: 0.8rem;
-    letter-spacing: 0.08em;
-    line-height: 1.2;
-    white-space: normal;
+  /* ✅ Mobile readability */
+  @media (max-width: 768px) {
+    .booking-field label {
+      color: #334155; /* по-тъмен от --muted, за да е 100% видим */
+      font-size: 0.8rem;
+      letter-spacing: 0.08em;
+      line-height: 1.2;
+      white-space: normal;
+    }
   }
-}
-
 
   /* HERO – една колона: текст отгоре, форма отдолу */
   @media (max-width: 768px) {
@@ -1560,5 +1576,3 @@ a[href^="tel"]:hover {
     display: none;
   }
 }
-
-
