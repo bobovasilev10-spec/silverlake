@@ -71,10 +71,13 @@
         hotelCta: "Още за хотела",
       },
       promo: {
-        title: "Специални седмични предложения",
+        title: "Меню и специални седмични предложения",
+        card2Title: "СЕДМИЧНИ ПРЕДЛОЖЕНИЯ",
+        card2Title1: "МЕНЮ",
         subtitle:
           "Сребърно езеро ви препоръчва да опитате:",
-        menuCta: "Виж предложението",
+        menuCta: "Виж предложенията",
+        menuCta1: "Виж менюто"
       },
       teaser: {
         title: "Свържете се с нас",
@@ -350,9 +353,12 @@
         hotelCta: "More about the hotel",
       },
       promo: {
-        title: "Special weekly offers",
+        title: "Menu and Special weekly offers",
+        card2Title: "Special weekly offers",
+        card2Title1: "Menu",
         subtitle: "Silver Lake recommends you try:",
         menuCta: "See the offer",
+        menuCta1: "See the menu"
       },
       teaser: {
         title: "Contact us",
